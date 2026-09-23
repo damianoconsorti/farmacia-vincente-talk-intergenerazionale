@@ -44,7 +44,21 @@ button,input{font:inherit}button,a,input,summary{-webkit-tap-highlight-color:tra
 .talk-pill{display:none}
 h1{font-size:clamp(32px,3.65vw,64px);margin:0 0 19px;color:var(--lime);line-height:1.1}
 .hero-subtitle{font-size:clamp(16px,1.25vw,20px);font-weight:800;line-height:1.45;max-width:530px;margin-bottom:14px}
-.hero-payoff{font-size:17px;font-weight:600;line-height:1.5;color:var(--lime);margin:0 0 23px}
+.hero-payoff{display:flex;align-items:baseline;gap:12px;font-size:17px;font-weight:600;line-height:1.5;color:var(--lime);margin:0 0 23px}
+.hero-payoff::before{content:"";width:23px;height:2px;flex:none;background:var(--lime);align-self:center}
+.hero-title .title-line{display:block;overflow:hidden;padding-bottom:.06em;margin-bottom:-.06em}
+.hero-title .title-word{display:block;transition:transform .55s cubic-bezier(.2,.7,.2,1),opacity .55s ease;transition-delay:var(--line-delay,60ms)}
+.hero-title .title-line:first-child{color:#fff}
+.motion-ready .hero-title.reveal:not(.is-visible){opacity:1;transform:none}
+.motion-ready .hero-title:not(.is-visible) .title-word{opacity:0;transform:translateY(105%)}
+.hero-meta{position:relative}
+.hero-meta::before{content:"";position:absolute;top:-1px;left:0;width:100%;height:2px;background:linear-gradient(90deg,var(--lime),rgba(160,206,78,.12));transform-origin:left;transition:transform .6s cubic-bezier(.2,.7,.2,1) .28s}
+.motion-ready .hero-meta:not(.is-visible)::before{transform:scaleX(0)}
+.hero-actions .hero-cta{position:relative;overflow:hidden;gap:24px;padding:11px 18px 11px 25px}
+.hero-cta .cta-arrow{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:rgba(7,63,10,.11);transition:transform .3s,background .3s}
+.hero-cta:hover .cta-arrow,.hero-cta:focus-visible .cta-arrow{transform:translateY(3px);background:rgba(7,63,10,.2)}
+.hero-cta::after{content:"";position:absolute;inset:-35% auto -35% -70%;width:35%;background:linear-gradient(90deg,transparent,#ffffff35,transparent);transform:skewX(-18deg);pointer-events:none;transition:left .5s ease}
+.hero-cta:hover::after,.hero-cta:focus-visible::after{left:135%}
 .hero-meta{display:flex;flex-wrap:wrap;gap:15px 26px;padding-top:21px;border-top:1px solid #ffffff29;margin-bottom:24px}
 .hero-meta-item:first-child{flex-basis:100%}
 .hero-meta-item span{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:#b8c3b4;margin-bottom:3px}
@@ -131,6 +145,7 @@ footer{background:var(--black);color:#aebda4;text-align:center;padding:24px;font
 @media(max-width:600px){.why-intro .btn{width:100%}.benefit p{font-size:15px}}
 @media(max-width:359px){.hero-copy{padding-inline:18px}.wrap{width:calc(100% - 32px)}.benefit{padding:20px 17px;column-gap:13px}.hero-meta{gap:14px 18px}.hero-meta-item strong{font-size:13px}.counter-box strong{font-size:31px}.form-panel{padding-inline:18px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.motion-ready .reveal:not(.is-visible){opacity:1;transform:none}.motion-ready .benefit:not(.is-visible) .benefit-icon svg :is(path,circle,rect){stroke-dashoffset:0}.btn:hover,.benefit:hover,.benefit:hover .benefit-icon{transform:none}}
+@media(prefers-reduced-motion:reduce){.motion-ready .hero-title:not(.is-visible) .title-word{opacity:1;transform:none}.motion-ready .hero-meta:not(.is-visible)::before{transform:none}.hero-cta::after{display:none}.hero-cta:hover .cta-arrow,.hero-cta:focus-visible .cta-arrow{transform:none}}
 </style>
 </head>
 <body>
@@ -144,7 +159,7 @@ footer{background:var(--black);color:#aebda4;text-align:center;padding:24px;font
         <div class="hero-copy-inner">
           <div class="brand-lockup reveal"><img src="https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/assets/logo.png" alt="Farmacia Vincente Talk" width="1204" height="414"></div>
           <div class="talk-pill">TALK FV</div>
-          <h1 id="hero-title" class="display reveal" style="--reveal-delay:60ms">Confronto<br>Intergenerazionale</h1>
+          <h1 id="hero-title" class="display hero-title reveal"><span class="title-line"><span class="title-word">Confronto</span></span> <span class="title-line"><span class="title-word" style="--line-delay:160ms">Intergenerazionale</span></span></h1>
           <div class="hero-subtitle reveal" style="--reveal-delay:120ms">Come le diverse generazioni in farmacia condizionano il lavoro</div>
           <p class="hero-payoff reveal" style="--reveal-delay:180ms">Trasformare un potenziale problema in successo</p>
           <div class="hero-meta reveal" style="--reveal-delay:240ms">
@@ -153,7 +168,7 @@ footer{background:var(--black);color:#aebda4;text-align:center;padding:24px;font
             <div class="hero-meta-item"><span>Ora</span><strong>Ore 14.00</strong></div>
           </div>
           <div class="hero-actions reveal" style="--reveal-delay:300ms">
-            <button class="btn btn-solid js-scroll-form" type="button">Iscriviti ora <span aria-hidden="true">↓</span></button>
+            <button class="btn btn-solid hero-cta js-scroll-form" type="button">Iscriviti ora <span class="cta-arrow" aria-hidden="true">↓</span></button>
             <span class="speaker-note">Partecipazione gratuita previa iscrizione</span>
           </div>
           <p class="hero-text reveal" style="--reveal-delay:360ms">Generazioni diverse, esperienze diverse, modi diversi di comunicare, lavorare e interpretare il proprio ruolo in farmacia. Come trasformare queste differenze da possibile fonte di tensione in un valore capace di migliorare collaborazione, organizzazione e crescita del team?</p>

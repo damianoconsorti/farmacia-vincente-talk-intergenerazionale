@@ -13,242 +13,238 @@
   <meta property="og:locale" content="it_IT">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/confronto-intergenerazionale-farmacia/"><meta property="og:url" content="https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/confronto-intergenerazionale-farmacia/"><meta property="og:image" content="https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/assets/team-hero-v2.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"><style>:root{--black:#080908;--green:#073f0a;--lime:#a0ce4e;--pale:#d9e6c0;--text:#171a15;--muted:#4b5447;--max:1640px}
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
+:root{--black:#080908;--green:#073f0a;--lime:#a0ce4e;--pale:#d9e6c0;--paper:#f7f9f4;--text:#171a15;--muted:#52604e;--line:#dce3d6;--max:1320px}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:#fff;color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
-button,input{font:inherit}img{max-width:100%;display:block}a{color:inherit}
-.display,.eyebrow,.btn,.benefit h3,.countdown-meta,.counter-box,.hero-meta strong,.speaker{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-weight:400}
-.display{text-transform:uppercase;line-height:1.06;letter-spacing:.005em}
-.wrap{width:min(var(--max),calc(100% - 64px));margin:auto}
-.eyebrow{font-size:1rem;text-transform:uppercase;letter-spacing:.025em;color:var(--lime)}
-.btn{appearance:none;display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:7px 22px;border:2px solid var(--lime);border-radius:19px;background:transparent;color:var(--lime);font-size:1.23rem;line-height:1.1;text-decoration:none;cursor:pointer;transition:background .25s,color .25s,transform .25s}
-.btn:hover{background:var(--lime);color:#062f08;transform:translateY(-2px)}
-.btn:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d7f67d;outline-offset:4px}
-.btn-solid{background:var(--lime);color:#063008}.btn-solid:hover{background:#b9e878}
-.reveal{opacity:0;transform:translateY(12px);transition:opacity .45s,transform .45s}.reveal.is-visible{opacity:1;transform:none}
-.hero{display:grid;grid-template-columns:50% 50%;min-height:700px;background:var(--black);color:white}
-.hero-visual{min-height:700px;overflow:hidden}.hero-visual img{width:100%;height:100%;object-fit:cover;object-position:43% center}
-.hero-copy{display:flex;align-items:center;justify-content:center;padding:58px clamp(36px,5vw,110px)}
-.hero-copy-inner{width:100%;max-width:750px;text-align:center}
-.brand-lockup{width:min(260px,55%);margin:0 auto 25px}.brand-lockup img{width:100%;height:auto}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body{margin:0;background:#fff;color:var(--text);font-family:Manrope,Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65}
+button,input{font:inherit}button,a,input,summary{-webkit-tap-highlight-color:transparent}img{max-width:100%;display:block}a{color:inherit}
+.display,.btn,.counter-box strong{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-weight:400}
+.display{text-transform:uppercase;line-height:1.08;letter-spacing:-.012em}
+.wrap{width:min(var(--max),calc(100% - 96px));margin-inline:auto}
+.eyebrow{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.13em;color:var(--green);margin-bottom:13px}
+.accent-text{color:var(--green)}
+.btn{appearance:none;display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:52px;padding:12px 25px;border:1.5px solid var(--lime);border-radius:7px;background:transparent;color:var(--lime);font-size:19px;line-height:1.1;text-decoration:none;cursor:pointer;transition:background .25s,color .25s,transform .25s,box-shadow .25s}
+.btn:hover{background:var(--lime);color:var(--green);transform:translateY(-2px);box-shadow:0 5px 0 rgba(160,206,78,.15)}
+.btn span{transition:transform .25s}.btn:hover span{transform:translateY(3px)}
+.btn-solid{background:var(--lime);color:var(--green)}.btn-solid:hover{background:#b1db66}
+:where(a,button,summary,input):focus-visible{outline:3px solid var(--lime);outline-offset:5px}
+.skip-link{position:fixed;left:16px;top:12px;z-index:30;background:var(--lime);color:var(--green);padding:12px 18px;transform:translateY(-150%)}.skip-link:focus{transform:none}
+.scroll-progress{position:fixed;inset:0 0 auto;height:3px;background:var(--lime);transform:scaleX(0);transform-origin:left;z-index:25;pointer-events:none}
+.reveal{transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.2,1);transition-delay:var(--reveal-delay,0ms)}
+.motion-ready .reveal:not(.is-visible){opacity:0;transform:translateY(24px)}
+.hero{display:grid;grid-template-columns:1fr 1fr;background:var(--black);color:#fff}
+.hero-visual,.signup-visual{position:relative;overflow:hidden;min-width:0;margin:0;background:var(--green)}
+.hero-visual img,.signup-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:54% center}
+.hero-visual{min-height:760px}
+.hero-visual::after{content:"Esperienze diverse.\A Una direzione comune.";white-space:pre-line;position:absolute;inset:auto 0 0;padding:90px clamp(28px,4vw,72px) 40px;background:linear-gradient(0deg,rgba(4,30,7,.82),transparent);font-family:Anton,Impact,sans-serif;font-size:clamp(24px,2.3vw,36px);line-height:1.15;color:#fff}
+.hero-copy{display:flex;align-items:center;padding:52px clamp(32px,4vw,76px)}
+.hero-copy-inner{width:100%;max-width:670px;margin-inline:auto;min-width:0}
+.brand-lockup{width:208px;max-width:62%;margin-bottom:26px}.brand-lockup img{width:100%;height:auto}
 .talk-pill{display:none}
-h1{font-size:clamp(3.5rem,4.6vw,6.4rem);color:var(--lime);margin:0;overflow-wrap:anywhere}
-.hero-subtitle{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-size:clamp(1.3rem,1.55vw,1.9rem);line-height:1.2;text-transform:uppercase;margin:19px auto 9px;max-width:640px}
-.hero-payoff{font-family:Anton,Impact,"Arial Narrow",sans-serif;color:var(--lime);font-size:clamp(1.3rem,1.45vw,1.9rem);margin:0 0 16px}
-.hero-text{font-size:.97rem;max-width:620px;margin:0 auto 23px;color:#eceee8}
-.hero-meta{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 35px;margin:0 0 25px}
-.hero-meta-item span{display:block;font-size:.75rem;text-transform:uppercase;letter-spacing:.08em;color:#d9ded1}
-.hero-meta-item strong{display:block;color:var(--lime);font-size:1.25rem;line-height:1.2}
-.hero-actions{display:flex;flex-direction:column;align-items:center;gap:10px}.speaker-note{font-size:.8rem;color:#d9ded1}
-.overview{padding:36px 0 86px;background:white}
-.overview-grid{display:grid;grid-template-columns:minmax(0, .95fr) minmax(0,1.45fr);gap:clamp(26px,3.4vw,64px);align-items:start}
-.why-card{position:relative;min-height:925px;overflow:hidden;border-radius:15px;background:#273528;color:white;isolation:isolate;display:flex;align-items:center;justify-content:center;padding:45px clamp(26px,3vw,58px);text-align:left}
-.why-card::before{content:"";position:absolute;inset:0;z-index:-2;background:url("https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/assets/editorial.jpg") center/cover no-repeat}
-.why-card::after{content:"";position:absolute;inset:0;z-index:-1;background:rgba(0,0,0,.67)}
-.why-inner{max-width:680px}
-.why-logo{width:min(290px,70%);height:auto;margin:0 auto 26px}
-.why-card h2{font-size:clamp(2.5rem,3vw,4.2rem);color:var(--lime);margin:0 0 25px;text-align:center}
-.why-card p{font-size:.89rem;line-height:1.58;margin:0 0 13px;color:white}
-.why-list{padding:0;margin:20px 0;list-style:none}.why-list li{position:relative;padding-left:19px;margin:0 0 8px;font-size:.85rem;line-height:1.45}.why-list li::before{content:"•";position:absolute;left:0;color:var(--lime);font-weight:bold}
-.why-card .closing{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-size:1.3rem;color:var(--lime);line-height:1.3;margin-top:22px}
-.why-card .btn{display:flex;width:max-content;margin:27px auto 0}
-.benefits{padding:28px 0 0}.benefits-head{margin-bottom:32px}.benefits-head h2{font-size:clamp(2.4rem,3.3vw,4.7rem);margin:5px 0 0}.benefits-head p{margin:10px 0 0;color:var(--muted);max-width:540px}
-.benefit-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:clamp(24px,3vw,60px);row-gap:58px}
-.benefit{padding:0;transition:transform .3s}.benefit:hover{transform:translateY(-4px)}
-.benefit-icon{width:76px;height:76px;margin-bottom:22px}.benefit-icon img{width:100%;height:100%;object-fit:contain}
-.benefit h3{text-transform:uppercase;font-size:clamp(1.4rem,1.5vw,1.95rem);line-height:1.18;margin:0 0 12px}
-.benefit p{font-size:.93rem;line-height:1.55;margin:0;color:#282e26}
-.countdown-section{background:var(--pale);text-align:center;padding:69px 0 64px}
-.countdown-section h2{font-size:clamp(3.6rem,4.8vw,6.8rem);margin:0 0 42px}
-.countdown-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;max-width:1200px;margin:auto}
-.counter-box{background:var(--green);color:white;padding:14px 8px 11px;border-radius:6px;line-height:1}
-.counter-box strong{display:block;font-weight:400;font-size:clamp(2.5rem,3.6vw,4.7rem);color:var(--lime)}
-.counter-box span{display:block;font-size:1.16rem}
-.countdown-meta{font-size:clamp(1.25rem,1.8vw,2rem);margin-top:18px;line-height:1.25}
-.countdown-state{display:none;background:var(--green);color:var(--lime);padding:25px;font-family:Anton,Impact,"Arial Narrow",sans-serif;font-size:clamp(2rem,4vw,4.5rem)}.countdown-state.visible{display:block}.countdown-grid.hidden{display:none}
-.editorial{background:var(--black);color:white;padding:88px 0}
-.editorial-grid{display:grid;grid-template-columns:1.1fr .75fr;gap:7vw;align-items:center}
-.editorial h2{font-size:clamp(4rem,6vw,8.6rem);color:var(--lime);margin:0}
-.editorial p{font-size:1.03rem;margin:0 0 17px;color:#eee}.editorial .btn{margin-top:15px}
-.signup{display:grid;grid-template-columns:50% 50%;background:var(--green);color:white}
-.form-panel{padding:clamp(45px,5vw,100px);align-self:center}
-.form-panel h2{font-size:clamp(2.8rem,3.3vw,4.9rem);max-width:750px;margin:0 0 32px}
-.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:21px 26px}
-.field label{display:block;font-size:.89rem;margin-bottom:5px}.field input{width:100%;background:transparent;color:white;border:0;border-bottom:1px solid #95b394;border-radius:0;min-height:48px;padding:8px 0;font-size:16px}.field input:focus{outline:none;border-bottom:3px solid var(--lime)}
-.field input[aria-invalid=true]{border-color:#ffd4ca}.error{font-size:.8rem;color:#ffe2d7;min-height:1em;margin-top:3px}
-.privacy-row{grid-column:1/-1;display:flex;align-items:start;gap:10px;margin-top:8px}.privacy-row input{width:20px;height:20px;accent-color:var(--lime);margin:2px 0 0}.privacy-row label{font-size:.9rem}.privacy-row a{color:#d7f67d}
-#privacy-error{grid-column:1/-1;margin-top:-18px}
-.form-actions,.form-status{grid-column:1/-1}.form-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap}.free-note{font-size:.85rem}.form-status{min-height:1.5em;font-size:.9rem}.form-status.success{color:#d7f67d}.form-status.fail{color:#ffe2d7}
-.signup-visual{min-height:720px;overflow:hidden}.signup-visual img{width:100%;height:100%;object-fit:cover;object-position:center}
-footer{background:#171717;color:var(--lime);text-align:center;padding:20px;font-size:.75rem}
+h1{font-size:clamp(32px,3.65vw,64px);margin:0 0 19px;color:var(--lime);line-height:1.1}
+.hero-subtitle{font-size:clamp(16px,1.25vw,20px);font-weight:800;line-height:1.45;max-width:530px;margin-bottom:14px}
+.hero-payoff{font-size:17px;font-weight:600;line-height:1.5;color:var(--lime);margin:0 0 23px}
+.hero-meta{display:flex;flex-wrap:wrap;gap:15px 26px;padding-top:21px;border-top:1px solid #ffffff29;margin-bottom:24px}
+.hero-meta-item:first-child{flex-basis:100%}
+.hero-meta-item span{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:#b8c3b4;margin-bottom:3px}
+.hero-meta-item strong{font-size:15px;font-weight:700;line-height:1.4;color:#fff}
+.hero-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.speaker-note{font-size:12px;max-width:180px;line-height:1.5;color:#cdd6c8}
+.hero-text{font-size:14px;line-height:1.7;color:#bfc9ba;max-width:58ch;margin:24px 0 0}
+.benefits-section{padding:88px 0 82px;background:#fff}
+.benefits-head{display:flex;justify-content:space-between;align-items:end;gap:60px;margin-bottom:36px}
+.benefits-head h2{font-size:clamp(36px,3.3vw,48px);margin:0;max-width:620px}.benefits-head h2 span{display:block}
+.benefits-head p{font-size:16px;color:var(--muted);max-width:370px;margin:0 0 3px}
+.benefit-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.benefit{position:relative;min-width:0;padding:28px 23px 27px;background:var(--paper);border:1px solid var(--line);border-radius:12px;transition:transform .3s,box-shadow .3s,border-color .3s,opacity .55s;transition-delay:var(--reveal-delay,0ms)}
+.benefit:hover{transform:translateY(-5px);box-shadow:0 14px 28px #073f0a0c;border-color:#9dbb86;transition-delay:0ms}
+.benefit-icon{width:60px;height:60px;padding:11px;background:#e4efd6;color:var(--green);border-radius:16px;margin-bottom:26px;transition:transform .3s,background .3s}
+.benefit:hover .benefit-icon{transform:translateY(-3px) rotate(-5deg);background:var(--lime)}
+.benefit-icon svg{display:block;width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
+.motion-ready .benefit:not(.is-visible) .benefit-icon svg :is(path,circle,rect){stroke-dasharray:140;stroke-dashoffset:140}
+.benefit-icon svg :is(path,circle,rect){stroke-dasharray:140;stroke-dashoffset:0;transition:stroke-dashoffset .6s ease}
+.benefit-topic{display:block;font-size:10px;font-weight:800;letter-spacing:.13em;color:#617454;margin-bottom:9px}
+.benefit h3{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:23px;line-height:1.2;margin:0 0 15px;text-transform:uppercase;max-width:270px}
+.benefit p{font-size:15px;line-height:1.75;color:var(--muted);margin:0}
+.overview{padding:82px 0;background:var(--paper);border-top:1px solid #e9eee4}
+.why-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(48px,7vw,100px);align-items:start}
+.why-intro h2{font-size:clamp(36px,3.3vw,48px);margin:0 0 24px;color:var(--green)}
+.why-intro p{font-size:16px;line-height:1.8;color:var(--muted);margin:0 0 18px;max-width:58ch}
+.why-intro .why-highlight{font-size:19px;font-weight:700;line-height:1.6;color:var(--green);border-left:3px solid var(--lime);padding-left:20px;margin-top:24px}
+.why-topics{border-top:1px solid #bdccb1}
+.why-topic{border-bottom:1px solid #bdccb1}
+.why-topic summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:22px;padding:23px 0;color:var(--green);font-size:18px;font-weight:800;line-height:1.45}
+.why-topic summary::-webkit-details-marker{display:none}
+.why-toggle{position:relative;width:30px;height:30px;flex:none;border:1px solid #a6bf93;border-radius:50%;transition:background .25s,transform .3s}
+.why-toggle::before,.why-toggle::after{content:"";position:absolute;left:9px;top:14px;width:10px;height:1px;background:var(--green);transition:transform .3s}
+.why-toggle::after{transform:rotate(90deg)}.why-topic[open] .why-toggle::after{transform:rotate(0)}
+.why-topic[open] .why-toggle{background:var(--lime);border-color:var(--lime)}
+.why-topic summary:hover .why-toggle{background:var(--lime)}
+.topic-copy{padding:0 0 24px;max-width:62ch}.why-topic[open] .topic-copy{animation:topic-enter .35s ease both}
+.topic-copy p{font-size:15px;line-height:1.8;color:var(--muted);margin:0 0 16px}.topic-copy p:last-child{margin-bottom:0}.topic-copy strong{color:var(--green)}
+.why-list{margin:18px 0 0;padding:0;list-style:none}.why-list li{position:relative;padding-left:24px;margin-bottom:12px;font-size:14px;line-height:1.7;color:var(--muted)}
+.why-list li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:800}
+.why-closing{margin-top:28px;padding-top:0}
+.why-closing h3{font-size:20px;font-weight:700;line-height:1.5;color:var(--green);max-width:760px;margin:0 0 14px}
+.why-intro .btn{margin-top:12px}
+.why-closing p{font-size:14px;line-height:1.8;color:var(--muted);max-width:790px;margin:0}
+.countdown-section{background:var(--pale);padding:60px 0}
+.countdown-section .wrap{display:grid;grid-template-columns:.8fr 1.2fr;column-gap:70px;align-items:center}
+.countdown-section .eyebrow{grid-column:1;grid-row:1;margin:0 0 10px;align-self:end}
+.countdown-section h2{grid-column:1;grid-row:2;font-size:clamp(32px,3vw,46px);margin:0;line-height:1.1}
+.countdown-meta{grid-column:1;grid-row:3;font-size:13px;font-weight:700;margin-top:16px;align-self:start;color:var(--green)}
+.countdown-grid{grid-column:2;grid-row:1/4;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.counter-box{background:var(--green);color:#fff;padding:22px 8px 18px;text-align:center;border-radius:8px}
+.counter-box strong{display:block;font-size:clamp(34px,3.6vw,54px);font-variant-numeric:tabular-nums;line-height:1.1;color:var(--lime)}
+.counter-box span{display:block;font-size:12px;margin-top:7px}
+.countdown-state{display:none;grid-column:2;grid-row:1/4;background:var(--green);color:var(--lime);padding:28px;font-size:24px;font-weight:800;text-align:center;border-radius:8px}
+.countdown-state.visible{display:block}.countdown-grid.hidden{display:none}
+.editorial{background:var(--black);color:#fff;padding:76px 0}
+.editorial-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center}
+.editorial h2{font-size:clamp(40px,4.4vw,68px);line-height:1.07;margin:0;color:#fff}
+.editorial h2 span{color:var(--lime)}
+.editorial p{font-size:15px;line-height:1.8;color:#cbd4c6;margin:0 0 14px}.editorial .btn{margin-top:10px}
+.signup{display:grid;grid-template-columns:1fr 1fr;background:var(--green);color:#fff}
+.form-panel{padding:64px clamp(32px,5vw,88px);align-self:center;min-width:0}
+.form-panel .eyebrow{color:var(--lime)}
+.form-panel h2{font-size:clamp(32px,3.3vw,48px);margin:0 0 30px;max-width:560px}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px 24px}
+.field{min-width:0}.field label{display:block;font-size:13px;font-weight:600;margin-bottom:3px}
+.field input{width:100%;background:transparent;color:#fff;border:0;border-bottom:1px solid #7eaa72;border-radius:0;min-height:48px;padding:8px 2px;font-size:16px;transition:border-color .2s,background .2s}
+.field input:focus{outline:2px solid var(--lime);outline-offset:2px;background:#ffffff08;border-color:var(--lime)}
+.field input[aria-invalid=true]{border-color:#ffd4ca}
+.error{font-size:12px;line-height:1.5;color:#ffe2d7;min-height:18px;margin-top:3px}
+.privacy-row{grid-column:1/-1;display:flex;align-items:start;gap:11px;margin-top:5px}.privacy-row input{flex:none;width:20px;height:20px;accent-color:var(--lime);margin:1px 0 0}
+.privacy-row label{font-size:13px;line-height:1.7}.privacy-row a{color:#d7f67d;text-underline-offset:3px}
+#privacy-error{grid-column:1/-1;margin-top:-14px}
+.form-actions,.form-status{grid-column:1/-1}.form-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap}.free-note{font-size:12px;max-width:180px;line-height:1.6}
+.form-status{min-height:24px;font-size:14px;line-height:1.6}.form-status.success{color:#d7f67d}.form-status.fail{color:#ffe2d7}
+.signup-visual{min-height:720px}.signup-visual::after{content:"Il valore nasce dal confronto.";position:absolute;inset:auto 0 0;padding:90px 40px 32px;background:linear-gradient(0deg,rgba(4,30,7,.8),transparent);font-family:Anton,Impact,sans-serif;font-size:30px;line-height:1.2;color:#fff}
+footer{background:var(--black);color:#aebda4;text-align:center;padding:24px;font-size:11px}
 .mobile-cta{display:none}
-@media(max-width:1150px){.hero{min-height:620px}.hero-visual{min-height:620px}.hero-copy{padding:42px 28px}h1{font-size:clamp(3rem,4.5vw,5rem)}.hero-text{font-size:.89rem}.overview-grid{grid-template-columns:1fr 1fr;gap:26px}.why-card{min-height:1050px;padding:28px}.benefit-grid{gap:32px 18px}.benefit-icon{width:65px;height:65px}.form-panel{padding:45px}}
-@media(max-width:820px){.hero{grid-template-columns:1fr}.hero-visual{min-height:420px;height:55vw;max-height:560px}.hero-copy{padding:48px 32px 60px}.hero-copy-inner{max-width:700px}.overview-grid{grid-template-columns:1fr}.why-card{min-height:auto;padding:55px 42px}.benefits{padding:30px 0}.editorial-grid{grid-template-columns:1fr;gap:30px}.signup{grid-template-columns:1fr}.signup-visual{min-height:480px;max-height:600px}}
-@media(max-width:600px){.wrap{width:calc(100% - 34px)}.hero-visual{min-height:260px;height:70vw;max-height:350px}.hero-copy{padding:36px 22px 48px}.brand-lockup{width:180px;margin-bottom:18px}h1{font-size:clamp(2.1rem,9vw,3.6rem);overflow-wrap:normal}.hero-subtitle{font-size:1.16rem}.hero-payoff{font-size:1.2rem}.hero-text{font-size:.92rem}.hero-meta{gap:12px 24px}.hero-meta-item strong{font-size:1.1rem}.hero-actions .btn{width:100%}.overview{padding:18px 0 60px}.why-card{padding:39px 24px}.why-card h2{font-size:2.55rem}.why-card p,.why-list li{font-size:.89rem}.benefits-head h2{font-size:2.8rem}.benefit-grid{grid-template-columns:1fr;gap:32px}.benefit{display:grid;grid-template-columns:60px 1fr;column-gap:16px}.benefit-icon{grid-row:1/3;width:60px;height:60px;margin:0}.benefit h3{font-size:1.48rem}.benefit p{grid-column:2}.countdown-section{padding:57px 0}.countdown-section h2{font-size:3.2rem;margin-bottom:25px}.countdown-grid{grid-template-columns:repeat(2,1fr);gap:9px}.counter-box strong{font-size:3.5rem}.editorial{padding:69px 0}.editorial h2{font-size:clamp(3.5rem,14vw,5.5rem)}.editorial .btn{width:100%}.form-panel{padding:53px 22px 70px}.form-panel h2{font-size:3.15rem}.form-grid{grid-template-columns:1fr;gap:16px}.privacy-row,.form-actions,.form-status,#privacy-error{grid-column:1}.form-actions{display:block}.form-actions .btn{width:100%}.free-note{display:block;margin-top:12px}.signup-visual{min-height:340px;height:75vw}.mobile-cta{display:block;position:fixed;bottom:12px;left:12px;right:12px;z-index:10;transition:opacity .2s}.mobile-cta .btn{width:100%;background:var(--lime);color:#063008;box-shadow:0 6px 20px #0005}footer{padding-bottom:86px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}.reveal{opacity:1;transform:none}}
-/* Art direction v2: team exchange is visual subject; content blocks gain editorial rhythm. */
-body{background:#f8f9f5}
-.hero{grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);min-height:760px}
-.hero-visual{position:relative;min-height:760px;background:#153a19}
-.hero-visual::after{content:"TALK FV · 20.10.2026";position:absolute;left:0;right:0;bottom:0;padding:16px 24px;background:var(--lime);color:var(--green);font-family:Anton,Impact,sans-serif;font-size:1.15rem;letter-spacing:.06em}
-.hero-visual img{object-position:center;height:100%;filter:saturate(.88) contrast(1.03)}
-.hero-copy{justify-content:flex-start;padding:62px clamp(45px,6vw,120px)}
-.hero-copy-inner{text-align:left;max-width:690px}
-.hero-copy h1{font-size:clamp(3.1rem,3.7vw,5.3rem);letter-spacing:-.018em;overflow-wrap:normal}
-.brand-lockup{margin:0 0 30px;width:min(250px,62%)}
-.hero-subtitle,.hero-text{margin-left:0}.hero-subtitle{max-width:620px}.hero-payoff{margin-top:14px}.hero-meta{justify-content:flex-start;border-top:1px solid #394138;padding-top:20px;margin-top:28px}.hero-actions{align-items:flex-start}.hero-actions .btn{border-radius:0;padding-inline:28px}
-.overview{padding:86px 0 110px}.overview-grid{grid-template-columns:minmax(380px,.83fr) minmax(0,1.55fr);gap:clamp(35px,5vw,92px)}
-.why-card{min-height:0;border-radius:0;padding:56px clamp(28px,4vw,65px);align-items:flex-start;background:var(--green)}
-.why-card::before{background:url("https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/assets/team-form.jpg") 65% bottom/cover no-repeat;opacity:.23;filter:grayscale(1)}
-.why-card::after{background:linear-gradient(180deg,rgba(3,44,7,.76),rgba(3,57,8,.95))}
-.why-logo{width:205px;margin:0 0 42px}.why-card h2{text-align:left;font-size:clamp(3rem,4.5vw,5.4rem);margin-bottom:28px}.why-card p{font-size:.94rem;line-height:1.65}.why-card .closing{font-size:1.55rem}.why-card .btn{margin:30px 0 0;border-radius:0}
-.benefits{padding-top:10px}.benefits-head{display:grid;grid-template-columns:1.3fr .7fr;gap:35px;border-bottom:1px solid #d8ddd1;padding-bottom:30px;margin-bottom:0}.benefits-head h2{font-size:clamp(3.1rem,4.9vw,6.5rem);line-height:.98}.benefits-head p{align-self:end;margin:0;font-size:1rem;line-height:1.6}
-.benefit-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:0;border-top:0}.benefit{position:relative;display:grid;grid-template-columns:88px 1fr;column-gap:24px;padding:38px 20px 40px 0;border-bottom:1px solid #d8ddd1}.benefit:nth-child(odd){padding-right:42px;border-right:1px solid #d8ddd1}.benefit:nth-child(even){padding-left:42px}.benefit-icon{width:72px;height:72px;border:1px solid var(--green);border-radius:50%;padding:17px;margin:0;background:transparent;color:var(--green)}.benefit-icon svg{width:100%;height:100%;display:block;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}.benefit-icon img{display:none}.benefit h3{font-size:1.7rem;margin-top:3px}.benefit p{grid-column:2;font-size:.94rem}.benefit:hover{transform:none;background:#f0f4e7}.benefit:hover .benefit-icon{background:var(--lime)}
-.countdown-section{position:relative;overflow:hidden;padding:100px 0 83px}.countdown-section::before{content:"20";position:absolute;left:-.04em;top:-.24em;color:rgba(7,63,10,.08);font-family:Anton,Impact,sans-serif;font-size:30rem;line-height:1}.countdown-section>*{position:relative}.counter-box{padding:25px 10px 20px;border-radius:0;border-top:6px solid var(--lime)}.counter-box strong{font-size:clamp(3rem,4.8vw,6.2rem)}
-.editorial{padding:116px 0;background:var(--black)}.editorial-grid{grid-template-columns:1.25fr .6fr}.editorial h2{font-size:clamp(4.4rem,7.2vw,10.2rem);line-height:.92}.editorial p{font-size:1.1rem;line-height:1.62}.editorial .btn{border-radius:0}
-.signup{grid-template-columns:1.02fr .98fr}.form-panel{padding:clamp(56px,7vw,128px)}.signup-visual{min-height:790px}.signup-visual img{object-position:center;filter:saturate(.82)}
-@media(max-width:1000px){.hero{grid-template-columns:1fr}.hero-visual{min-height:470px;order:0}.hero-copy{order:1;justify-content:center}.hero-copy-inner{text-align:center}.hero-meta,.hero-actions{justify-content:center;align-items:center}.overview-grid{grid-template-columns:1fr}.why-card{padding:56px}.benefits{padding-top:20px}.editorial-grid{grid-template-columns:minmax(0,1fr)}.signup{grid-template-columns:minmax(0,1fr);width:100%;min-width:0}.form-panel,.signup-visual{width:100%;min-width:0}.signup-visual{min-height:500px}}
-@media(max-width:600px){html,body{overflow-x:clip}.hero-visual{min-height:320px;height:76vw}.hero-visual::after{font-size:.88rem;padding:11px 16px}.hero-copy{padding:42px 22px 55px}.hero-copy-inner{text-align:left}.hero-copy h1{font-size:clamp(2rem,8.3vw,3rem);letter-spacing:-.012em}.brand-lockup{margin-bottom:24px}.hero-meta,.hero-actions{justify-content:flex-start;align-items:flex-start}.hero-actions .btn{width:100%;border-radius:0}.overview{padding:52px 0 65px}.why-card{padding:42px 25px}.why-logo{margin-bottom:28px}.why-card h2{font-size:3.4rem}.benefits-head{grid-template-columns:1fr;gap:18px}.benefits-head h2{font-size:3.5rem}.benefit-grid{grid-template-columns:1fr}.benefit,.benefit:nth-child(odd),.benefit:nth-child(even){padding:28px 0;grid-template-columns:62px 1fr;column-gap:16px;border-right:0}.benefit-icon{width:54px;height:54px;padding:12px}.benefit h3{font-size:1.45rem}.benefit p{grid-column:2}.countdown-section{padding:74px 0 66px}.countdown-section::before{font-size:16rem;top:-.1em}.editorial{padding:82px 0}.editorial h2{font-size:4.2rem}.signup-visual{min-height:360px}}
-/* Final art direction: full-bleed imagery, compact editorial story, stronger benefit hierarchy. */
-.hero-visual,.signup-visual{position:relative;overflow:hidden}
-.hero-visual img,.signup-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.hero-visual img{object-position:54% center;filter:none}
-.signup-visual img{object-position:54% center;filter:none}
-.hero-visual::after{z-index:1}
-.overview{padding:clamp(52px,6vw,96px) 0 clamp(72px,7vw,118px)}
-.overview-grid{grid-template-columns:minmax(0,1fr);gap:clamp(60px,7vw,112px)}
-.why-card{padding:clamp(38px,5.5vw,85px);background:var(--green)}
-.why-card::before{background-image:url("https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/assets/team-form-v2.jpg");opacity:.12;filter:grayscale(1)}
-.why-card::after{background:linear-gradient(110deg,rgba(3,44,7,.98),rgba(3,57,8,.84))}
-.why-inner{max-width:none;width:100%}
-.why-logo{width:180px;margin:0 0 26px}
-.why-card h2{font-size:clamp(3.6rem,6vw,7rem);margin:0 0 38px;line-height:1.02}
-.why-flow{columns:2;column-gap:clamp(36px,6vw,110px);column-rule:1px solid rgba(217,230,192,.24)}
-.why-flow p{font-size:clamp(.95rem,1.05vw,1.1rem);line-height:1.62;margin:0 0 16px;break-inside:avoid}
-.why-flow .closing{font-size:clamp(1.55rem,2vw,2.25rem);line-height:1.25;margin:22px 0;break-inside:avoid}
-.why-flow .why-list{break-inside:avoid;margin:18px 0}
-.why-flow .why-list li{font-size:.96rem;line-height:1.5;margin-bottom:8px}
-.why-card .btn{margin-top:34px}
-.benefits{padding:0}
-.benefits-head{grid-template-columns:1.2fr .8fr;gap:clamp(24px,5vw,80px);padding-bottom:34px;margin-bottom:28px;border-color:#cbd5c3}
-.benefits-head h2{font-size:clamp(3.5rem,6vw,7.4rem);max-width:830px}
-.benefits-head p{max-width:370px;font-size:1.08rem}
-.benefit-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
-.benefit,.benefit:nth-child(odd),.benefit:nth-child(even){position:relative;display:flex;flex-direction:column;align-items:flex-start;min-height:390px;padding:clamp(25px,2.6vw,44px);border:1px solid #dfe5d8;background:#f3f6ef;overflow:hidden;transition:transform .3s ease,box-shadow .3s ease,background .3s ease}
-.benefit-number{position:absolute;right:22px;top:10px;font-family:Anton,Impact,sans-serif;font-size:4.6rem;line-height:1;color:rgba(7,63,10,.08);pointer-events:none}
-.benefit-icon{width:70px;height:70px;flex:none;display:grid;place-items:center;padding:17px;border:0;border-radius:17px;background:var(--lime);color:var(--green);box-shadow:0 9px 22px rgba(7,63,10,.12);margin:0 0 auto;transition:transform .35s ease,background .35s ease}
-.benefit-icon svg{stroke-width:1.8}
-.benefit h3{font-size:clamp(1.55rem,1.8vw,2rem);line-height:1.13;margin:36px 0 12px;max-width:290px}
-.benefit p{grid-column:auto;font-size:.95rem;line-height:1.6;margin:0;max-width:330px}
-.benefit:hover{transform:translateY(-6px);background:#e9f0dd;box-shadow:0 22px 40px rgba(7,63,10,.13)}
-.benefit:hover .benefit-icon{transform:rotate(-7deg) scale(1.06);background:#c2e678}
-.benefit:first-child{background:var(--green);color:#fff;border-color:var(--green)}
-.benefit:first-child p{color:#e8f0e2}.benefit:first-child .benefit-number{color:rgba(160,206,78,.15)}
-.benefit:last-child{background:#dcecc3;border-color:#dcecc3}
-.editorial{position:relative;border-top:10px solid var(--lime)}
-.editorial h2{max-width:980px}
-.editorial-grid>div{border-left:2px solid var(--lime);padding-left:clamp(25px,3vw,48px)}
-.signup-visual{min-height:790px;background:#dfe8d7}
-.signup-visual::after{content:"IL VALORE NASCE DAL CONFRONTO";position:absolute;left:0;bottom:0;width:100%;z-index:1;background:linear-gradient(0deg,rgba(4,35,7,.82),transparent);color:#fff;padding:80px clamp(28px,4vw,72px) 33px;font-family:Anton,Impact,sans-serif;font-size:clamp(1.4rem,2.2vw,2.6rem);letter-spacing:.02em}
-@media(max-width:1200px){.benefit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.benefit,.benefit:nth-child(odd),.benefit:nth-child(even){min-height:320px}.hero-visual img{object-position:center}}
-@media(max-width:820px){.why-flow{columns:1}.why-card{padding:48px 38px}.why-card h2{font-size:clamp(3.6rem,9vw,5.5rem)}.benefits-head{grid-template-columns:1fr;gap:14px}.benefits-head p{max-width:650px}.editorial-grid>div{border-left:0;border-top:2px solid var(--lime);padding:28px 0 0}.signup-visual{min-height:500px}}
-@media(max-width:600px){.overview-grid{gap:66px}.why-card{padding:38px 24px}.why-card h2{font-size:3.55rem;margin-bottom:26px}.why-flow p{font-size:.95rem}.benefits-head h2{font-size:clamp(3rem,13vw,4.4rem)}.benefit-grid{grid-template-columns:1fr;gap:10px}.benefit,.benefit:nth-child(odd),.benefit:nth-child(even){min-height:0;padding:28px;display:grid;grid-template-columns:56px 1fr;column-gap:20px}.benefit-icon{grid-row:1/3;width:56px;height:56px;padding:13px;margin:0}.benefit h3{margin:0 0 9px;font-size:1.55rem}.benefit p{grid-column:2}.benefit-number{font-size:3.3rem;right:13px;top:8px}.signup-visual{min-height:360px;height:78vw}.signup-visual::after{font-size:1.15rem;padding:70px 22px 22px}}
+@keyframes topic-enter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(min-width:1700px){.hero-copy{padding-block:66px}.hero-meta-item:first-child{flex-basis:auto}.hero-visual{min-height:790px}}
+@media(max-width:1100px){.wrap{width:calc(100% - 64px)}.hero-copy{padding:44px 30px}.hero-visual{min-height:740px}.hero-actions{gap:12px}.speaker-note{max-width:140px}.benefit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.benefit{padding:28px}.benefit h3{max-width:100%;font-size:24px}.benefit p{font-size:15px}.why-grid{gap:45px}.editorial-grid{gap:44px}.countdown-section .wrap{column-gap:36px}.form-panel{padding:55px 32px}}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-copy{order:0;padding:42px 40px}.hero-copy-inner{max-width:700px}h1{font-size:clamp(32px,6vw,54px)}.hero-meta-item:first-child{flex-basis:auto}.hero-meta{gap:22px 30px}.hero-actions{gap:20px}.speaker-note{max-width:220px}.hero-text{max-width:65ch;font-size:15px}.hero-visual{order:1;min-height:0;height:420px}.hero-visual img{object-position:center 43%}.hero-visual::after{font-size:28px;padding:80px 40px 30px}.why-grid{grid-template-columns:1fr;gap:28px}.why-intro p{max-width:100%}.why-intro .why-highlight{margin-top:22px}.why-topics{max-width:none}.topic-copy{max-width:100%}.why-closing{gap:30px}.countdown-section .wrap{grid-template-columns:1fr}.countdown-section .eyebrow,.countdown-section h2,.countdown-meta{grid-column:1;grid-row:auto;text-align:center}.countdown-grid,.countdown-state{grid-column:1;grid-row:auto;margin-top:25px}.countdown-meta{margin-top:20px}.editorial-grid{grid-template-columns:1fr;gap:30px}.editorial h2{max-width:700px}.editorial-grid>div{max-width:680px}.signup{grid-template-columns:1fr}.form-panel{padding:55px 40px;max-width:800px;width:100%;margin:auto}.signup-visual{min-height:0;height:420px}.signup-visual img{object-position:center 42%}.benefits-head{gap:30px}.benefits-head p{max-width:290px}}
+@media(max-width:600px){.wrap{width:calc(100% - 40px)}.hero-copy{padding:30px 22px 34px}.brand-lockup{width:170px;margin-bottom:24px}h1{font-size:clamp(26px,7.8vw,43px);margin-bottom:17px}.hero-subtitle{font-size:16px;line-height:1.5}.hero-payoff{font-size:16px;margin-bottom:20px}.hero-meta{gap:15px 22px;padding-top:18px;margin-bottom:22px}.hero-meta-item:first-child{flex-basis:100%}.hero-meta-item strong{font-size:14px}.hero-meta-item span{font-size:10px}.hero-actions{display:block}.hero-actions .btn{width:100%}.speaker-note{display:block;max-width:none;margin-top:10px;text-align:center}.hero-text{font-size:14px;line-height:1.75;margin-top:24px}.hero-visual{height:310px}.hero-visual::after{font-size:24px;padding:70px 24px 26px}.benefits-section{padding:54px 0}.benefits-head{display:block;margin-bottom:26px}.benefits-head h2{font-size:36px}.benefits-head p{max-width:none;margin-top:20px;font-size:15px}.benefit-grid{grid-template-columns:1fr;gap:14px}.benefit{padding:24px;display:grid;grid-template-columns:48px minmax(0,1fr);column-gap:17px}.benefit-icon{width:48px;height:48px;padding:9px;grid-column:1;grid-row:1/4;margin:0;border-radius:13px}.benefit-topic{grid-column:2;margin:0 0 7px;font-size:9px}.benefit h3{grid-column:2;font-size:21px;margin-bottom:12px}.benefit p{grid-column:2;font-size:14px;line-height:1.75}.overview{padding:54px 0}.why-intro h2{font-size:36px;margin-bottom:22px}.why-intro p{font-size:15px;line-height:1.8}.why-intro .why-highlight{font-size:17px;padding-left:17px}.why-topic summary{font-size:17px;padding:21px 0}.topic-copy p{font-size:15px}.why-list li{font-size:14px}.why-closing{grid-template-columns:1fr;gap:23px;margin-top:30px;padding-top:27px}.why-closing h3{font-size:19px}.why-closing p{font-size:14px}.why-closing .btn{width:100%}.countdown-section{padding:44px 0}.countdown-section h2{font-size:34px}.countdown-grid{gap:7px}.counter-box{padding:18px 5px 16px;border-radius:6px}.counter-box strong{font-size:36px}.counter-box span{font-size:10px}.countdown-meta{font-size:12px}.countdown-section .eyebrow{font-size:10px}.editorial{padding:54px 0}.editorial h2{font-size:40px}.editorial p{font-size:15px}.editorial .btn{width:100%}.form-panel{padding:48px 22px 38px}.form-panel h2{font-size:34px}.form-grid{grid-template-columns:1fr;gap:13px}.field label{font-size:14px}.field input{min-height:50px}.privacy-row label{font-size:13px}.form-actions{display:block}.form-actions .btn{width:100%}.free-note{display:block;max-width:none;text-align:center;margin-top:12px}.signup-visual{height:300px}.signup-visual::after{font-size:24px;padding:70px 24px 26px}.mobile-cta{display:block;position:fixed;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));z-index:15;transition:opacity .25s,transform .25s}.mobile-cta .btn{width:100%;box-shadow:0 6px 22px #00150033;background:var(--lime);color:var(--green)}.mobile-cta.is-hidden{opacity:0;transform:translateY(12px);pointer-events:none}footer{padding-bottom:86px}}
+@media(max-width:600px){.why-intro .btn{width:100%}.benefit p{font-size:15px}}
+@media(max-width:359px){.hero-copy{padding-inline:18px}.wrap{width:calc(100% - 32px)}.benefit{padding:20px 17px;column-gap:13px}.hero-meta{gap:14px 18px}.hero-meta-item strong{font-size:13px}.counter-box strong{font-size:31px}.form-panel{padding-inline:18px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.motion-ready .reveal:not(.is-visible){opacity:1;transform:none}.motion-ready .benefit:not(.is-visible) .benefit-icon svg :is(path,circle,rect){stroke-dashoffset:0}.btn:hover,.benefit:hover,.benefit:hover .benefit-icon{transform:none}}
 </style>
 </head>
 <body>
+  <a class="skip-link" href="#iscrizione">Vai al modulo di iscrizione</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
   <main>
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-visual"><img src="https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/assets/team-hero-v2.jpg" alt="Tre farmacisti di generazioni diverse condividono idee in farmacia" fetchpriority="high" width="1696" height="944"></div>
+      <div class="hero-visual"><img src="https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/assets/team-hero-v3.webp" alt="Tre farmacisti di generazioni diverse condividono idee in farmacia" fetchpriority="high" width="1672" height="941"></div>
 
       <div class="hero-copy">
-        <div class="hero-copy-inner reveal">
-          <div class="brand-lockup"><img src="https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/assets/logo.png" alt="Farmacia Vincente Talk" width="1204" height="414"></div>
+        <div class="hero-copy-inner">
+          <div class="brand-lockup reveal"><img src="https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/assets/logo.png" alt="Farmacia Vincente Talk" width="1204" height="414"></div>
           <div class="talk-pill">TALK FV</div>
-          <h1 id="hero-title" class="display">Confronto<br>Intergenerazionale</h1>
-          <div class="hero-subtitle">Come le diverse generazioni in farmacia condizionano il lavoro</div>
-          <p class="hero-payoff">Trasformare un potenziale problema in successo</p>
-          <p class="hero-text">Generazioni diverse, esperienze diverse, modi diversi di comunicare, lavorare e interpretare il proprio ruolo in farmacia. Come trasformare queste differenze da possibile fonte di tensione in un valore capace di migliorare collaborazione, organizzazione e crescita del team?</p>
-          <div class="hero-meta">
+          <h1 id="hero-title" class="display reveal" style="--reveal-delay:60ms">Confronto<br>Intergenerazionale</h1>
+          <div class="hero-subtitle reveal" style="--reveal-delay:120ms">Come le diverse generazioni in farmacia condizionano il lavoro</div>
+          <p class="hero-payoff reveal" style="--reveal-delay:180ms">Trasformare un potenziale problema in successo</p>
+          <div class="hero-meta reveal" style="--reveal-delay:240ms">
             <div class="hero-meta-item"><span>Relatrice</span><strong>con Veronica de Angelis</strong></div>
             <div class="hero-meta-item"><span>Data</span><strong>Martedì 20 ottobre 2026</strong></div>
             <div class="hero-meta-item"><span>Ora</span><strong>Ore 14.00</strong></div>
           </div>
-          <div class="hero-actions">
+          <div class="hero-actions reveal" style="--reveal-delay:300ms">
             <button class="btn btn-solid js-scroll-form" type="button">Iscriviti ora <span aria-hidden="true">↓</span></button>
             <span class="speaker-note">Partecipazione gratuita previa iscrizione</span>
           </div>
+          <p class="hero-text reveal" style="--reveal-delay:360ms">Generazioni diverse, esperienze diverse, modi diversi di comunicare, lavorare e interpretare il proprio ruolo in farmacia. Come trasformare queste differenze da possibile fonte di tensione in un valore capace di migliorare collaborazione, organizzazione e crescita del team?</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="benefits-section" aria-labelledby="benefits-title">
+      <div class="wrap">
+        <div class="benefits-head">
+          <div class="reveal"><div class="eyebrow">Cosa porterai con te</div><h2 id="benefits-title" class="display"><span>Dal confronto</span><span class="accent-text">alla crescita.</span></h2></div>
+          <p class="reveal">Quattro prospettive operative per leggere meglio le dinamiche del team e trasformarle in valore.</p>
+        </div>
+        <div class="benefit-grid">
+          <article class="benefit reveal">
+            <div class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><circle cx="13" cy="12" r="5"/><circle cx="28" cy="14" r="4"/><path d="M4 33v-3a9 9 0 0 1 18 0v3M25 24a7 7 0 0 1 11 6v3M21 8l3-3M25 5h4"/></svg></div>
+            <span class="benefit-topic">Le persone</span>
+            <h3>Comprendi le dinamiche generazionali</h3>
+            <p>Impara a riconoscere come età, esperienza professionale, aspettative e modelli culturali differenti possano influenzare comportamenti, comunicazione e organizzazione del lavoro in farmacia.</p>
+          </article>
+          <article class="benefit reveal" style="--reveal-delay:70ms">
+            <div class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M5 7h20a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H14l-7 5v-5H5a3 3 0 0 1-3-3V10a3 3 0 0 1 3-3Z"/><path d="M32 15h2a4 4 0 0 1 4 4v11a3 3 0 0 1-3 3h-3v4l-6-4h-8M9 14h13M9 19h8"/></svg></div>
+            <span class="benefit-topic">Le relazioni</span>
+            <h3>Riduci attriti e incomprensioni</h3>
+            <p>Comprendi quali meccanismi possono generare tensioni tra colleghi e come intervenire prima che una semplice differenza di approccio si trasformi in un problema per il gruppo.</p>
+          </article>
+          <article class="benefit reveal" style="--reveal-delay:140ms">
+            <div class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M4 12h26l-6-6M30 12l-6 6M36 28H10l6-6M10 28l6 6"/><path d="M4 7v10M36 23v10"/><circle cx="20" cy="20" r="2"/></svg></div>
+            <span class="benefit-topic">Il dialogo</span>
+            <h3>Costruisci un linguaggio comune</h3>
+            <p>Scopri come migliorare il confronto tra titolare e collaboratori e favorire una comunicazione più chiara tra persone con esperienze, abitudini e modalità di lavoro differenti.</p>
+          </article>
+          <article class="benefit reveal" style="--reveal-delay:210ms">
+            <div class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 35V18M20 26C9 26 5 21 5 12c10 0 15 5 15 14ZM20 20c0-10 5-15 15-15 0 10-5 15-15 15Z"/><path d="m20 20 8-8M20 26l-8-7M11 35h18"/></svg></div>
+            <span class="benefit-topic">Il team</span>
+            <h3>Trasforma le differenze in valore</h3>
+            <p>Valorizza l'esperienza delle generazioni più mature insieme alle competenze, alle idee e ai nuovi strumenti portati dalle generazioni più giovani, costruendo un team più coeso e capace di evolvere.</p>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="overview" aria-labelledby="why-title">
-      <div class="wrap overview-grid">
-        <article class="why-card reveal"><div class="why-inner"><img class="why-logo" src="https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/assets/logo.png" alt="Farmacia Vincente Talk" loading="lazy" width="1204" height="414">
-          <div class="eyebrow">Talk FV</div>
-          <h2 id="why-title" class="display">Perché partecipare</h2>
-          <div class="why-flow">
-          <p>Oggi all'interno della stessa farmacia possono lavorare fianco a fianco persone appartenenti a generazioni molto diverse tra loro. Professionisti con anni di esperienza, collaboratori cresciuti in contesti organizzativi differenti e giovani che entrano nel mondo del lavoro con aspettative, linguaggi, priorità e strumenti nuovi.</p>
-          <p>Queste differenze possono rappresentare una straordinaria ricchezza. Ma, se non vengono comprese e gestite correttamente, possono anche generare incomprensioni, difficoltà nella comunicazione, resistenza al cambiamento e tensioni all'interno del gruppo di lavoro.</p>
-          <p><strong>Non si tratta semplicemente di una questione anagrafica.</strong></p>
-          <p>Ogni generazione porta con sé un diverso rapporto con il lavoro, con l'autorità, con la tecnologia, con il cambiamento, con la responsabilità e perfino con il concetto stesso di crescita professionale. Ciò che per una persona può apparire naturale, per un'altra può essere interpretato in modo completamente differente.</p>
-          <p><strong>Il vero problema nasce quando queste differenze non vengono riconosciute.</strong></p>
-          <p>Il confronto intergenerazionale diventa allora uno degli aspetti più importanti nella gestione della farmacia moderna: comprendere le persone, creare un linguaggio comune e costruire un'organizzazione nella quale esperienza e innovazione possano convivere.</p>
-          <p>Durante questo Talk con Veronica de Angelis analizzeremo le dinamiche che possono nascere tra generazioni differenti all'interno della farmacia e vedremo come trasformare un potenziale elemento di conflitto in un'occasione concreta di crescita per l'intero team.</p>
-          <p>Partecipare significa acquisire una maggiore consapevolezza delle dinamiche organizzative che ogni giorno influenzano il lavoro in farmacia.</p>
-          <ul class="why-list">
-            <li>riconoscere le principali differenze nel modo di lavorare e comunicare tra generazioni;</li>
-            <li>individuare le cause delle incomprensioni che possono nascere all'interno del team;</li>
-            <li>migliorare il dialogo tra titolare, collaboratori senior e collaboratori più giovani;</li>
-            <li>valorizzare esperienza, competenze e nuovi punti di vista;</li>
-            <li>ridurre attriti e resistenze al cambiamento;</li>
-            <li>creare maggiore collaborazione e responsabilizzazione;</li>
-            <li>trasformare le differenze generazionali in una risorsa per la crescita della farmacia.</li>
-          </ul>
-          <p class="closing">L'obiettivo non è eliminare le differenze, ma imparare a comprenderle e utilizzarle.</p>
-          <p>Perché una squadra efficace non è necessariamente composta da persone che pensano tutte allo stesso modo. È una squadra nella quale competenze, esperienze e visioni differenti riescono a lavorare nella stessa direzione.</p>
+      <div class="wrap">
+        <div class="why-grid">
+          <div class="why-intro reveal">
+            <div class="eyebrow">Dentro il Talk</div>
+            <h2 id="why-title" class="display">Perché partecipare</h2>
+            <p>Oggi all'interno della stessa farmacia possono lavorare fianco a fianco persone appartenenti a generazioni molto diverse tra loro. Professionisti con anni di esperienza, collaboratori cresciuti in contesti organizzativi differenti e giovani che entrano nel mondo del lavoro con aspettative, linguaggi, priorità e strumenti nuovi.</p>
+            <p class="why-highlight">Non si tratta semplicemente di una questione anagrafica.</p>
+            <button class="btn btn-solid js-scroll-form" type="button">Iscriviti ora <span aria-hidden="true">↓</span></button>
           </div>
-          <button class="btn js-scroll-form" type="button">Iscriviti ora <span aria-hidden="true">↓</span></button>
-        </div></article>
-
-        <div class="benefits reveal">
-          <div class="benefits-head">
-            <div>
-              <div class="eyebrow">Cosa porterai con te</div>
-              <h2 class="display">Dal confronto alla crescita</h2>
-            </div>
-            <p>Quattro prospettive operative per leggere meglio le dinamiche del team e trasformarle in valore.</p>
+          <div class="why-side reveal" style="--reveal-delay:100ms">
+          <div class="why-topics">
+            <details class="why-topic" name="why-topics">
+              <summary>Riconoscere le differenze<span class="why-toggle" aria-hidden="true"></span></summary>
+              <div class="topic-copy">
+                <p>Queste differenze possono rappresentare una straordinaria ricchezza. Ma, se non vengono comprese e gestite correttamente, possono anche generare incomprensioni, difficoltà nella comunicazione, resistenza al cambiamento e tensioni all'interno del gruppo di lavoro.</p>
+                <p>Ogni generazione porta con sé un diverso rapporto con il lavoro, con l'autorità, con la tecnologia, con il cambiamento, con la responsabilità e perfino con il concetto stesso di crescita professionale. Ciò che per una persona può apparire naturale, per un'altra può essere interpretato in modo completamente differente.</p>
+                <p><strong>Il vero problema nasce quando queste differenze non vengono riconosciute.</strong></p>
+              </div>
+            </details>
+            <details class="why-topic" name="why-topics">
+              <summary>Creare un linguaggio comune<span class="why-toggle" aria-hidden="true"></span></summary>
+              <div class="topic-copy">
+                <p>Il confronto intergenerazionale diventa allora uno degli aspetti più importanti nella gestione della farmacia moderna: comprendere le persone, creare un linguaggio comune e costruire un'organizzazione nella quale esperienza e innovazione possano convivere.</p>
+                <p>Durante questo Talk con Veronica de Angelis analizzeremo le dinamiche che possono nascere tra generazioni differenti all'interno della farmacia e vedremo come trasformare un potenziale elemento di conflitto in un'occasione concreta di crescita per l'intero team.</p>
+              </div>
+            </details>
+            <details class="why-topic" name="why-topics">
+              <summary>Cosa porti nel lavoro di ogni giorno<span class="why-toggle" aria-hidden="true"></span></summary>
+              <div class="topic-copy">
+                <p>Partecipare significa acquisire una maggiore consapevolezza delle dinamiche organizzative che ogni giorno influenzano il lavoro in farmacia.</p>
+                <ul class="why-list">
+                  <li>riconoscere le principali differenze nel modo di lavorare e comunicare tra generazioni;</li>
+                  <li>individuare le cause delle incomprensioni che possono nascere all'interno del team;</li>
+                  <li>migliorare il dialogo tra titolare, collaboratori senior e collaboratori più giovani;</li>
+                  <li>valorizzare esperienza, competenze e nuovi punti di vista;</li>
+                  <li>ridurre attriti e resistenze al cambiamento;</li>
+                  <li>creare maggiore collaborazione e responsabilizzazione;</li>
+                  <li>trasformare le differenze generazionali in una risorsa per la crescita della farmacia.</li>
+                </ul>
+              </div>
+            </details>
           </div>
-
-          <div class="benefit-grid">
-            <article class="benefit">
-              <span class="benefit-number" aria-hidden="true">01</span>
-              <div class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><circle cx="11" cy="10" r="4"></circle><circle cx="22" cy="12" r="3"></circle><path d="M4 27c0-5 3-8 7-8s7 3 7 8M19 27c0-4 2-6 5-6 2 0 4 1 5 4"></path><path d="M17 10h3M19 14l-2 2"></path></svg></div>
-              <h3>Comprendi le dinamiche generazionali</h3>
-              <p>Impara a riconoscere come età, esperienza professionale, aspettative e modelli culturali differenti possano influenzare comportamenti, comunicazione e organizzazione del lavoro in farmacia.</p>
-            </article>
-
-            <article class="benefit">
-              <span class="benefit-number" aria-hidden="true">02</span>
-              <div class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 8h17a5 5 0 0 1 5 5v5a5 5 0 0 1-5 5h-7l-5 4v-4H9a5 5 0 0 1-5-5v-5a5 5 0 0 1 1-3"></path><path d="M10 14h12M10 18h8"></path></svg></div>
-              <h3>Riduci attriti e incomprensioni</h3>
-              <p>Comprendi quali meccanismi possono generare tensioni tra colleghi e come intervenire prima che una semplice differenza di approccio si trasformi in un problema per il gruppo.</p>
-            </article>
-
-            <article class="benefit">
-              <span class="benefit-number" aria-hidden="true">03</span>
-              <div class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M5 24l7-7 5 4 10-11"></path><path d="M21 10h6v6"></path><path d="M5 6v20h22"></path><circle cx="12" cy="17" r="2"></circle></svg></div>
-              <h3>Costruisci un linguaggio comune</h3>
-              <p>Scopri come migliorare il confronto tra titolare e collaboratori e favorire una comunicazione più chiara tra persone con esperienze, abitudini e modalità di lavoro differenti.</p>
-            </article>
-
-            <article class="benefit">
-              <span class="benefit-number" aria-hidden="true">04</span>
-              <div class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 3l3 7 8 1-6 5 2 8-7-4-7 4 2-8-6-5 8-1z"></path><path d="M16 9v7M12 16h8"></path></svg></div>
-              <h3>Trasforma le differenze in valore</h3>
-              <p>Valorizza l'esperienza delle generazioni più mature insieme alle competenze, alle idee e ai nuovi strumenti portati dalle generazioni più giovani, costruendo un team più coeso e capace di evolvere.</p>
-            </article>
-          </div>
+        <div class="why-closing">
+          <div><h3>L'obiettivo non è eliminare le differenze, ma imparare a comprenderle e utilizzarle.</h3>
+          <p>Perché una squadra efficace non è necessariamente composta da persone che pensano tutte allo stesso modo. È una squadra nella quale competenze, esperienze e visioni differenti riescono a lavorare nella stessa direzione.</p></div>
+        </div>
+        </div>
         </div>
       </div>
     </section>
@@ -270,7 +266,7 @@ body{background:#f8f9f5}
 
     <section class="editorial" aria-labelledby="editorial-title">
       <div class="wrap editorial-grid reveal">
-        <h2 id="editorial-title" class="display">Generazioni diverse.<br>Un solo team.</h2>
+        <h2 id="editorial-title" class="display">Generazioni diverse.<br><span>Un solo team.</span></h2>
         <div>
           <p>Le differenze all'interno della farmacia possono diventare motivo di distanza oppure una delle sue più importanti risorse.</p>
           <p>La differenza la fa il modo in cui vengono comprese e gestite.</p>
@@ -333,7 +329,7 @@ body{background:#f8f9f5}
         </form>
       </div>
 
-      <aside class="signup-visual"><img src="https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/assets/team-form-v2.jpg" alt="Quattro farmacisti di età diverse si confrontano e si ascoltano" loading="lazy" width="1696" height="944"></aside>
+      <aside class="signup-visual"><img src="https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/assets/team-form-v3.webp" alt="Quattro farmacisti di età diverse si confrontano e si ascoltano" loading="lazy" width="1672" height="941"></aside>
     </section>
   </main>
 
@@ -357,20 +353,53 @@ document.querySelectorAll(".js-scroll-form").forEach(button => {
     behavior: reducedMotion.matches ? "instant" : "smooth", block: "start"
   }));
 });
-if ("IntersectionObserver" in window) {
-  const revealObserver = new IntersectionObserver(entries => entries.forEach(entry => {
-    if (entry.isIntersecting) { entry.target.classList.add("is-visible"); revealObserver.unobserve(entry.target); }
-  }), {threshold: .08});
-  document.querySelectorAll(".reveal").forEach(el => revealObserver.observe(el));
-  const mobileCta = document.getElementById("mobile-cta");
-  new IntersectionObserver(entries => {
-    const visible = entries.some(entry => entry.isIntersecting);
-    mobileCta.style.opacity = visible ? "0" : "1";
-    mobileCta.style.pointerEvents = visible ? "none" : "auto";
-  }, {threshold: .05}).observe(document.getElementById("iscrizione"));
-} else {
-  document.querySelectorAll(".reveal").forEach(el => el.classList.add("is-visible"));
+const revealElements = document.querySelectorAll(".reveal");
+if ("IntersectionObserver" in window && !reducedMotion.matches) {
+  document.documentElement.classList.add("motion-ready");
+  const revealObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, {threshold: .12});
+  revealElements.forEach(el => revealObserver.observe(el));
+  reducedMotion.addEventListener("change", event => {
+    if (event.matches) {
+      document.documentElement.classList.remove("motion-ready");
+      revealObserver.disconnect();
+    }
+  });
 }
+const mobileCta = document.getElementById("mobile-cta");
+if ("IntersectionObserver" in window) {
+  const ctaRegions = new Set();
+  const ctaObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => entry.isIntersecting ? ctaRegions.add(entry.target) : ctaRegions.delete(entry.target));
+    const hidden = ctaRegions.size > 0;
+    mobileCta.classList.toggle("is-hidden", hidden);
+    mobileCta.inert = hidden;
+    mobileCta.setAttribute("aria-hidden", String(hidden));
+  }, {threshold: .01});
+  ctaObserver.observe(document.getElementById("iscrizione"));
+  ctaObserver.observe(document.querySelector(".hero-actions"));
+}
+const readingProgress = document.querySelector(".scroll-progress");
+let scrollFrame = false;
+function updateReadingProgress() {
+  const range = document.documentElement.scrollHeight - window.innerHeight;
+  readingProgress.style.transform = "scaleX(" + (range > 0 ? Math.min(1, window.scrollY / range) : 0) + ")";
+  scrollFrame = false;
+}
+window.addEventListener("scroll", () => {
+  if (!scrollFrame) {
+    scrollFrame = true;
+    requestAnimationFrame(updateReadingProgress);
+  }
+}, {passive: true});
+window.addEventListener("resize", updateReadingProgress);
+updateReadingProgress();
 function pad(value) { return String(value).padStart(2, "0"); }
 function updateCountdown() {
   const now = Date.now();

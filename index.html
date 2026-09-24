@@ -1,6 +1,5 @@
 <!doctype html>
-<html lang="it">
-<head>
+<html lang="it" class="motion-ready"><head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <title>Confronto intergenerazionale in farmacia | Talk FV</title>
@@ -13,13 +12,13 @@
   <meta property="og:locale" content="it_IT">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/confronto-intergenerazionale-farmacia/"><meta property="og:url" content="https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/confronto-intergenerazionale-farmacia/"><meta property="og:image" content="https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/assets/team-hero-v2.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"><style>
-:root{--black:#080908;--green:#073f0a;--lime:#a0ce4e;--pale:#d9e6c0;--paper:#f7f9f4;--text:#171a15;--muted:#52604e;--line:#dce3d6;--max:1320px}
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"><style>
+:root{--black:#080908;--green:#073f0a;--lime:#a0ce4e;--pale:#d9e6c0;--paper:#f7f9f4;--text:#171a15;--muted:#52604e;--line:#dce3d6;--max:1320px;--font-display:Anton,Impact,"Arial Narrow",sans-serif;--font-body:Manrope,Arial,Helvetica,sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:24px}
-body{margin:0;background:#fff;color:var(--text);font-family:Manrope,Arial,Helvetica,sans-serif;font-size:16px;line-height:1.65}
+body{margin:0;background:#fff;color:var(--text);font-family:var(--font-body);font-size:16px;line-height:1.65}
 button,input{font:inherit}button,a,input,summary{-webkit-tap-highlight-color:transparent}img{max-width:100%;display:block}a{color:inherit}
-.display,.btn,.counter-box strong{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-weight:400}
+.display,.btn,.counter-box strong,.benefit h3,.hero-visual::after,.signup-visual::after{font-family:var(--font-display);font-weight:400}
 .display{text-transform:uppercase;line-height:1.08;letter-spacing:-.012em}
 .wrap{width:min(var(--max),calc(100% - 96px));margin-inline:auto}
 .eyebrow{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.13em;color:var(--green);margin-bottom:13px}
@@ -32,14 +31,14 @@ button,input{font:inherit}button,a,input,summary{-webkit-tap-highlight-color:tra
 .skip-link{position:fixed;left:16px;top:12px;z-index:30;background:var(--lime);color:var(--green);padding:12px 18px;transform:translateY(-150%)}.skip-link:focus{transform:none}
 .scroll-progress{position:fixed;inset:0 0 auto;height:3px;background:var(--lime);transform:scaleX(0);transform-origin:left;z-index:25;pointer-events:none}
 .reveal{transition:opacity .55s ease,transform .55s cubic-bezier(.2,.7,.2,1);transition-delay:var(--reveal-delay,0ms)}
-.motion-ready .reveal:not(.is-visible){opacity:0;transform:translateY(24px)}
+.motion-ready .reveal:not(.){opacity:0;transform:translateY(24px)}
 .hero{position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,.96fr);background:var(--black);color:#fff}
 .hero-visual,.signup-visual{position:relative;overflow:hidden;min-width:0;margin:0;background:var(--green)}
 .hero-visual img,.signup-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:54% center}
 .hero-visual{z-index:0;min-height:760px;overflow:visible}
 .hero-visual img{inset:0 auto 0 0;width:calc(100% + 110px)}
 .hero-visual::before{content:"";position:absolute;z-index:2;top:0;right:-112px;bottom:0;width:255px;background:linear-gradient(90deg,transparent 0%,rgba(8,9,8,.18) 28%,rgba(8,9,8,.82) 72%,var(--black) 100%);pointer-events:none}
-.hero-visual::after{content:"Esperienze diverse.\A Una direzione comune.";white-space:pre-line;position:absolute;z-index:3;inset:auto 0 0;padding:90px clamp(28px,4vw,72px) 40px;background:linear-gradient(0deg,rgba(4,30,7,.82),transparent);font-family:Anton,Impact,sans-serif;font-size:clamp(24px,2.3vw,36px);line-height:1.15;color:#fff}
+.hero-visual::after{content:"Esperienze diverse.\A Una direzione comune.";white-space:pre-line;position:absolute;z-index:3;inset:auto 0 0;padding:90px clamp(28px,4vw,72px) 40px;background:linear-gradient(0deg,rgba(4,30,7,.82),transparent);font-size:clamp(24px,2.3vw,36px);line-height:1.15;color:#fff}
 .hero-copy{position:relative;z-index:1;display:flex;align-items:center;padding:52px clamp(32px,4vw,76px)}
 .hero-copy-inner{width:100%;max-width:670px;margin-inline:auto;min-width:0}
 .brand-lockup{width:208px;max-width:62%;margin-bottom:26px}.brand-lockup img{width:100%;height:auto}
@@ -51,11 +50,11 @@ h1{font-size:clamp(32px,3.65vw,64px);margin:0 0 19px;color:var(--lime);line-heig
 .hero-title .title-line{display:block;overflow:hidden;padding-bottom:.06em;margin-bottom:-.06em}
 .hero-title .title-word{display:block;transition:transform .55s cubic-bezier(.2,.7,.2,1),opacity .55s ease;transition-delay:var(--line-delay,60ms)}
 .hero-title .title-line:first-child{color:#fff}
-.motion-ready .hero-title.reveal:not(.is-visible){opacity:1;transform:none}
-.motion-ready .hero-title:not(.is-visible) .title-word{opacity:0;transform:translateY(105%)}
+.motion-ready .hero-title.reveal:not(.){opacity:1;transform:none}
+.motion-ready .hero-title:not(.) .title-word{opacity:0;transform:translateY(105%)}
 .hero-meta{position:relative}
 .hero-meta::before{content:"";position:absolute;top:-1px;left:0;width:100%;height:2px;background:linear-gradient(90deg,var(--lime),rgba(160,206,78,.12));transform-origin:left;transition:transform .6s cubic-bezier(.2,.7,.2,1) .28s}
-.motion-ready .hero-meta:not(.is-visible)::before{transform:scaleX(0)}
+.motion-ready .hero-meta:not(.)::before{transform:scaleX(0)}
 .hero-actions .hero-cta{position:relative;overflow:hidden;gap:24px;padding:11px 18px 11px 25px}
 .hero-cta .cta-arrow{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:rgba(7,63,10,.11);transition:transform .3s,background .3s}
 .hero-cta:hover .cta-arrow,.hero-cta:focus-visible .cta-arrow{transform:translateY(3px);background:rgba(7,63,10,.2)}
@@ -67,7 +66,7 @@ h1{font-size:clamp(32px,3.65vw,64px);margin:0 0 19px;color:var(--lime);line-heig
 .hero-meta-item strong{font-size:15px;font-weight:700;line-height:1.4;color:#fff}
 .hero-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
 .speaker-note{font-size:12px;max-width:180px;line-height:1.5;color:#cdd6c8}
-.hero-text{font-size:14px;line-height:1.7;color:#bfc9ba;max-width:58ch;margin:24px 0 0}
+.hero-text{font-size:16px;line-height:1.75;color:#c8d2c3;max-width:58ch;margin:24px 0 0}
 .benefits-section{padding:88px 0 82px;background:#fff}
 .benefits-head{display:flex;justify-content:space-between;align-items:end;gap:60px;margin-bottom:36px}
 .benefits-head h2{font-size:clamp(36px,3.3vw,48px);margin:0;max-width:620px}.benefits-head h2 span{display:block}
@@ -78,11 +77,11 @@ h1{font-size:clamp(32px,3.65vw,64px);margin:0 0 19px;color:var(--lime);line-heig
 .benefit-icon{width:60px;height:60px;padding:11px;background:#e4efd6;color:var(--green);border-radius:16px;margin-bottom:26px;transition:transform .3s,background .3s}
 .benefit:hover .benefit-icon{transform:translateY(-3px) rotate(-5deg);background:var(--lime)}
 .benefit-icon svg{display:block;width:100%;height:100%;stroke:currentColor;fill:none;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round}
-.motion-ready .benefit:not(.is-visible) .benefit-icon svg :is(path,circle,rect){stroke-dasharray:140;stroke-dashoffset:140}
+.motion-ready .benefit:not(.) .benefit-icon svg :is(path,circle,rect){stroke-dasharray:140;stroke-dashoffset:140}
 .benefit-icon svg :is(path,circle,rect){stroke-dasharray:140;stroke-dashoffset:0;transition:stroke-dashoffset .6s ease}
 .benefit-topic{display:block;font-size:10px;font-weight:800;letter-spacing:.13em;color:#617454;margin-bottom:9px}
-.benefit h3{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:23px;line-height:1.2;margin:0 0 15px;text-transform:uppercase;max-width:270px}
-.benefit p{font-size:15px;line-height:1.75;color:var(--muted);margin:0}
+.benefit h3{font-size:23px;line-height:1.2;margin:0 0 15px;text-transform:uppercase;max-width:270px}
+.benefit p{font-size:16px;line-height:1.75;color:var(--muted);margin:0}
 .overview{padding:82px 0;background:var(--paper);border-top:1px solid #e9eee4}
 .why-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(48px,7vw,100px);align-items:start}
 .why-intro h2{font-size:clamp(36px,3.3vw,48px);margin:0 0 24px;color:var(--green)}
@@ -98,13 +97,13 @@ h1{font-size:clamp(32px,3.65vw,64px);margin:0 0 19px;color:var(--lime);line-heig
 .why-topic[open] .why-toggle{background:var(--lime);border-color:var(--lime)}
 .why-topic summary:hover .why-toggle{background:var(--lime)}
 .topic-copy{padding:0 0 24px;max-width:62ch}.why-topic[open] .topic-copy{animation:topic-enter .35s ease both}
-.topic-copy p{font-size:15px;line-height:1.8;color:var(--muted);margin:0 0 16px}.topic-copy p:last-child{margin-bottom:0}.topic-copy strong{color:var(--green)}
-.why-list{margin:18px 0 0;padding:0;list-style:none}.why-list li{position:relative;padding-left:24px;margin-bottom:12px;font-size:14px;line-height:1.7;color:var(--muted)}
+.topic-copy p{font-size:16px;line-height:1.75;color:var(--muted);margin:0 0 16px}.topic-copy p:last-child{margin-bottom:0}.topic-copy strong{color:var(--green)}
+.why-list{margin:18px 0 0;padding:0;list-style:none}.why-list li{position:relative;padding-left:24px;margin-bottom:12px;font-size:16px;line-height:1.7;color:var(--muted)}
 .why-list li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:800}
 .why-closing{margin-top:28px;padding-top:0}
 .why-closing h3{font-size:20px;font-weight:700;line-height:1.5;color:var(--green);max-width:760px;margin:0 0 14px}
 .why-intro .btn{margin-top:12px}
-.why-closing p{font-size:14px;line-height:1.8;color:var(--muted);max-width:790px;margin:0}
+.why-closing p{font-size:16px;line-height:1.75;color:var(--muted);max-width:790px;margin:0}
 .countdown-section{background:var(--pale);padding:60px 0}
 .countdown-section .wrap{display:grid;grid-template-columns:.8fr 1.2fr;column-gap:70px;align-items:center}
 .countdown-section .eyebrow{grid-column:1;grid-row:1;margin:0 0 10px;align-self:end}
@@ -120,7 +119,7 @@ h1{font-size:clamp(32px,3.65vw,64px);margin:0 0 19px;color:var(--lime);line-heig
 .editorial-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center}
 .editorial h2{font-size:clamp(40px,4.4vw,68px);line-height:1.07;margin:0;color:#fff}
 .editorial h2 span{color:var(--lime)}
-.editorial p{font-size:15px;line-height:1.8;color:#cbd4c6;margin:0 0 14px}.editorial .btn{margin-top:10px}
+.editorial p{font-size:16px;line-height:1.75;color:#d3dcd0;margin:0 0 14px}.editorial .btn{margin-top:10px}
 .signup{display:grid;grid-template-columns:1fr 1fr;background:var(--green);color:#fff}
 .form-panel{padding:64px clamp(32px,5vw,88px);align-self:center;min-width:0}
 .form-panel .eyebrow{color:var(--lime)}
@@ -136,7 +135,7 @@ h1{font-size:clamp(32px,3.65vw,64px);margin:0 0 19px;color:var(--lime);line-heig
 #privacy-error{grid-column:1/-1;margin-top:-14px}
 .form-actions,.form-status{grid-column:1/-1}.form-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap}.free-note{font-size:12px;max-width:180px;line-height:1.6}
 .form-status{min-height:24px;font-size:14px;line-height:1.6}.form-status.success{color:#d7f67d}.form-status.fail{color:#ffe2d7}
-.signup-visual{min-height:720px}.signup-visual::after{content:"Il valore nasce dal confronto.";position:absolute;inset:auto 0 0;padding:90px 40px 32px;background:linear-gradient(0deg,rgba(4,30,7,.8),transparent);font-family:Anton,Impact,sans-serif;font-size:30px;line-height:1.2;color:#fff}
+.signup-visual{min-height:720px}.signup-visual::after{content:"Il valore nasce dal confronto.";position:absolute;inset:auto 0 0;padding:90px 40px 32px;background:linear-gradient(0deg,rgba(4,30,7,.8),transparent);font-size:30px;line-height:1.2;color:#fff}
 footer{background:var(--black);color:#aebda4;text-align:center;padding:24px;font-size:11px}
 .mobile-cta{display:none}
 @keyframes topic-enter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
@@ -144,36 +143,38 @@ footer{background:var(--black);color:#aebda4;text-align:center;padding:24px;font
 @media(max-width:1100px){.wrap{width:calc(100% - 64px)}.hero-copy{padding:44px 30px}.hero-visual{min-height:740px}.hero-actions{gap:12px}.speaker-note{max-width:140px}.benefit-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.benefit{padding:28px}.benefit h3{max-width:100%;font-size:24px}.benefit p{font-size:15px}.why-grid{gap:45px}.editorial-grid{gap:44px}.countdown-section .wrap{column-gap:36px}.form-panel{padding:55px 32px}}
 @media(max-width:900px){.hero{grid-template-columns:1fr}.hero-copy{order:0;padding:42px 40px}.hero-copy-inner{max-width:700px}h1{font-size:clamp(32px,6vw,54px)}.hero-meta-item:first-child{flex-basis:auto}.hero-meta{gap:22px 30px}.hero-actions{gap:20px}.speaker-note{max-width:220px}.hero-text{max-width:65ch;font-size:15px}.hero-visual{order:1;min-height:0;height:420px;overflow:hidden}.hero-visual img{inset:0;width:100%;object-position:center 43%}.hero-visual::before{display:none}.hero-visual::after{font-size:28px;padding:80px 40px 30px}.why-grid{grid-template-columns:1fr;gap:28px}.why-intro p{max-width:100%}.why-intro .why-highlight{margin-top:22px}.why-topics{max-width:none}.topic-copy{max-width:100%}.why-closing{gap:30px}.countdown-section .wrap{grid-template-columns:1fr}.countdown-section .eyebrow,.countdown-section h2,.countdown-meta{grid-column:1;grid-row:auto;text-align:center}.countdown-grid,.countdown-state{grid-column:1;grid-row:auto;margin-top:25px}.countdown-meta{margin-top:20px}.editorial-grid{grid-template-columns:1fr;gap:30px}.editorial h2{max-width:700px}.editorial-grid>div{max-width:680px}.signup{grid-template-columns:1fr}.form-panel{padding:55px 40px;max-width:800px;width:100%;margin:auto}.signup-visual{min-height:0;height:420px}.signup-visual img{object-position:center 42%}.benefits-head{gap:30px}.benefits-head p{max-width:290px}}
 @media(max-width:600px){.wrap{width:calc(100% - 40px)}.hero-copy{padding:30px 22px 34px}.brand-lockup{width:170px;margin:0 auto 24px}.hero-title{text-align:center}h1{font-size:clamp(26px,7.8vw,43px);margin-bottom:17px}.hero-subtitle{font-size:16px;line-height:1.5}.hero-payoff{font-size:16px;margin-bottom:20px}.hero-meta{gap:15px 22px;padding-top:18px;margin-bottom:22px}.hero-meta-item:first-child{flex-basis:100%}.hero-meta-item strong{font-size:14px}.hero-meta-item span{font-size:10px}.hero-actions{display:block}.hero-actions .btn{width:100%}.speaker-note{display:block;max-width:none;margin-top:10px;text-align:center}.hero-text{font-size:14px;line-height:1.75;margin-top:24px}.hero-visual{height:310px}.hero-visual::after{font-size:24px;padding:70px 24px 26px}.benefits-section{padding:54px 0}.benefits-head{display:block;margin-bottom:26px}.benefits-head h2{font-size:36px}.benefits-head p{max-width:none;margin-top:20px;font-size:15px}.benefit-grid{grid-template-columns:1fr;gap:14px}.benefit{padding:24px;display:grid;grid-template-columns:48px minmax(0,1fr);column-gap:17px}.benefit-icon{width:48px;height:48px;padding:9px;grid-column:1;grid-row:1/4;margin:0;border-radius:13px}.benefit-topic{grid-column:2;margin:0 0 7px;font-size:9px}.benefit h3{grid-column:2;font-size:21px;margin-bottom:12px}.benefit p{grid-column:2;font-size:14px;line-height:1.75}.overview{padding:54px 0}.why-intro h2{font-size:36px;margin-bottom:22px}.why-intro p{font-size:15px;line-height:1.8}.why-intro .why-highlight{font-size:17px;padding-left:17px}.why-topic summary{font-size:17px;padding:21px 0}.topic-copy p{font-size:15px}.why-list li{font-size:14px}.why-closing{grid-template-columns:1fr;gap:23px;margin-top:30px;padding-top:27px}.why-closing h3{font-size:19px}.why-closing p{font-size:14px}.why-closing .btn{width:100%}.countdown-section{padding:44px 0}.countdown-section h2{font-size:34px}.countdown-grid{gap:7px}.counter-box{padding:18px 5px 16px;border-radius:6px}.counter-box strong{font-size:36px}.counter-box span{font-size:10px}.countdown-meta{font-size:12px}.countdown-section .eyebrow{font-size:10px}.editorial{padding:54px 0}.editorial h2{font-size:40px}.editorial p{font-size:15px}.editorial .btn{width:100%}.form-panel{padding:48px 22px 38px}.form-panel h2{font-size:34px}.form-grid{grid-template-columns:1fr;gap:13px}.field label{font-size:14px}.field input{min-height:50px}.privacy-row label{font-size:13px}.form-actions{display:block}.form-actions .btn{width:100%}.free-note{display:block;max-width:none;text-align:center;margin-top:12px}.signup-visual{height:300px}.signup-visual::after{font-size:24px;padding:70px 24px 26px}.mobile-cta{display:block;position:fixed;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));z-index:15;transition:opacity .25s,transform .25s}.mobile-cta .btn{width:100%;box-shadow:0 6px 22px #00150033;background:var(--lime);color:var(--green)}.mobile-cta.is-hidden{opacity:0;transform:translateY(12px);pointer-events:none}footer{padding-bottom:86px}}
-@media(max-width:600px){.why-intro .btn{width:100%}.benefit p{font-size:15px}}
+@media(max-width:600px){.why-intro .btn{width:100%}.hero-text,.benefits-head p,.benefit p,.why-intro p,.topic-copy p,.why-list li,.why-closing p,.editorial p{font-size:16px}}
+@media(max-width:1100px){.benefit p{font-size:16px}}
+@media(max-width:900px){.hero-text{font-size:16px}}
 @media(max-width:359px){.hero-copy{padding-inline:18px}.wrap{width:calc(100% - 32px)}.benefit{padding:20px 17px;column-gap:13px}.hero-meta{gap:14px 18px}.hero-meta-item strong{font-size:13px}.counter-box strong{font-size:31px}.form-panel{padding-inline:18px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.motion-ready .reveal:not(.is-visible){opacity:1;transform:none}.motion-ready .benefit:not(.is-visible) .benefit-icon svg :is(path,circle,rect){stroke-dashoffset:0}.btn:hover,.benefit:hover,.benefit:hover .benefit-icon{transform:none}}
-@media(prefers-reduced-motion:reduce){.motion-ready .hero-title:not(.is-visible) .title-word{opacity:1;transform:none}.motion-ready .hero-meta:not(.is-visible)::before{transform:none}.hero-cta::after{display:none}.hero-cta:hover .cta-arrow,.hero-cta:focus-visible .cta-arrow{transform:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}.motion-ready .reveal:not(.){opacity:1;transform:none}.motion-ready .benefit:not(.) .benefit-icon svg :is(path,circle,rect){stroke-dashoffset:0}.btn:hover,.benefit:hover,.benefit:hover .benefit-icon{transform:none}}
+@media(prefers-reduced-motion:reduce){.motion-ready .hero-title:not(.) .title-word{opacity:1;transform:none}.motion-ready .hero-meta:not(.)::before{transform:none}.hero-cta::after{display:none}.hero-cta:hover .cta-arrow,.hero-cta:focus-visible .cta-arrow{transform:none}}
 </style>
 </head>
 <body>
   <a class="skip-link" href="#iscrizione">Vai al modulo di iscrizione</a>
-  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true" style="transform: scaleX(0);"></div>
   <main>
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-visual"><img src="https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/assets/team-hero-v3.webp" alt="Tre farmacisti di generazioni diverse condividono idee in farmacia" fetchpriority="high" width="1672" height="941"></div>
 
       <div class="hero-copy">
         <div class="hero-copy-inner">
-          <div class="brand-lockup reveal"><img src="https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/assets/logo.png" alt="Farmacia Vincente Talk" width="1204" height="414"></div>
+          <div class="brand-lockup reveal "><img src="https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/assets/logo.png" alt="Farmacia Vincente Talk" width="1204" height="414"></div>
           <div class="talk-pill">TALK FV</div>
-          <h1 id="hero-title" class="display hero-title reveal"><span class="title-line"><span class="title-word">Confronto</span></span> <span class="title-line"><span class="title-word" style="--line-delay:160ms">Intergenerazionale</span></span></h1>
-          <div class="hero-subtitle reveal" style="--reveal-delay:120ms">Come le diverse generazioni in farmacia condizionano il lavoro</div>
-          <p class="hero-payoff reveal" style="--reveal-delay:180ms">Trasformare un potenziale problema in successo</p>
-          <div class="hero-meta reveal" style="--reveal-delay:240ms">
+          <h1 id="hero-title" class="display hero-title reveal "><span class="title-line"><span class="title-word">Confronto</span></span> <span class="title-line"><span class="title-word" style="--line-delay:160ms">Intergenerazionale</span></span></h1>
+          <div class="hero-subtitle reveal " style="--reveal-delay:120ms">Come le diverse generazioni in farmacia condizionano il lavoro</div>
+          <p class="hero-payoff reveal " style="--reveal-delay:180ms">Trasformare un potenziale problema in successo</p>
+          <div class="hero-meta reveal " style="--reveal-delay:240ms">
             <div class="hero-meta-item"><span>Relatrice</span><strong>con Veronica de Angelis</strong></div>
             <div class="hero-meta-item"><span>Data</span><strong>Martedì 20 ottobre 2026</strong></div>
             <div class="hero-meta-item"><span>Ora</span><strong>Ore 14.00</strong></div>
           </div>
-          <div class="hero-actions reveal" style="--reveal-delay:300ms">
+          <div class="hero-actions reveal " style="--reveal-delay:300ms">
             <button class="btn btn-solid hero-cta js-scroll-form" type="button">Iscriviti ora <span class="cta-arrow" aria-hidden="true">↓</span></button>
             <span class="speaker-note">Partecipazione gratuita previa iscrizione</span>
           </div>
-          <p class="hero-text reveal" style="--reveal-delay:360ms">Generazioni diverse, esperienze diverse, modi diversi di comunicare, lavorare e interpretare il proprio ruolo in farmacia. Come trasformare queste differenze da possibile fonte di tensione in un valore capace di migliorare collaborazione, organizzazione e crescita del team?</p>
+          <p class="hero-text reveal " style="--reveal-delay:360ms">Generazioni diverse, esperienze diverse, modi diversi di comunicare, lavorare e interpretare il proprio ruolo in farmacia. Come trasformare queste differenze da possibile fonte di tensione in un valore capace di migliorare collaborazione, organizzazione e crescita del team?</p>
         </div>
       </div>
     </section>
@@ -187,25 +188,25 @@ footer{background:var(--black);color:#aebda4;text-align:center;padding:24px;font
         </div>
         <div class="benefit-grid">
           <article class="benefit reveal">
-            <div class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><circle cx="13" cy="12" r="5"/><circle cx="28" cy="14" r="4"/><path d="M4 33v-3a9 9 0 0 1 18 0v3M25 24a7 7 0 0 1 11 6v3M21 8l3-3M25 5h4"/></svg></div>
+            <div class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><circle cx="13" cy="12" r="5"></circle><circle cx="28" cy="14" r="4"></circle><path d="M4 33v-3a9 9 0 0 1 18 0v3M25 24a7 7 0 0 1 11 6v3M21 8l3-3M25 5h4"></path></svg></div>
             <span class="benefit-topic">Le persone</span>
             <h3>Comprendi le dinamiche generazionali</h3>
             <p>Impara a riconoscere come età, esperienza professionale, aspettative e modelli culturali differenti possano influenzare comportamenti, comunicazione e organizzazione del lavoro in farmacia.</p>
           </article>
           <article class="benefit reveal" style="--reveal-delay:70ms">
-            <div class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M5 7h20a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H14l-7 5v-5H5a3 3 0 0 1-3-3V10a3 3 0 0 1 3-3Z"/><path d="M32 15h2a4 4 0 0 1 4 4v11a3 3 0 0 1-3 3h-3v4l-6-4h-8M9 14h13M9 19h8"/></svg></div>
+            <div class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M5 7h20a4 4 0 0 1 4 4v10a4 4 0 0 1-4 4H14l-7 5v-5H5a3 3 0 0 1-3-3V10a3 3 0 0 1 3-3Z"></path><path d="M32 15h2a4 4 0 0 1 4 4v11a3 3 0 0 1-3 3h-3v4l-6-4h-8M9 14h13M9 19h8"></path></svg></div>
             <span class="benefit-topic">Le relazioni</span>
             <h3>Riduci attriti e incomprensioni</h3>
             <p>Comprendi quali meccanismi possono generare tensioni tra colleghi e come intervenire prima che una semplice differenza di approccio si trasformi in un problema per il gruppo.</p>
           </article>
           <article class="benefit reveal" style="--reveal-delay:140ms">
-            <div class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M4 12h26l-6-6M30 12l-6 6M36 28H10l6-6M10 28l6 6"/><path d="M4 7v10M36 23v10"/><circle cx="20" cy="20" r="2"/></svg></div>
+            <div class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M4 12h26l-6-6M30 12l-6 6M36 28H10l6-6M10 28l6 6"></path><path d="M4 7v10M36 23v10"></path><circle cx="20" cy="20" r="2"></circle></svg></div>
             <span class="benefit-topic">Il dialogo</span>
             <h3>Costruisci un linguaggio comune</h3>
             <p>Scopri come migliorare il confronto tra titolare e collaboratori e favorire una comunicazione più chiara tra persone con esperienze, abitudini e modalità di lavoro differenti.</p>
           </article>
           <article class="benefit reveal" style="--reveal-delay:210ms">
-            <div class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 35V18M20 26C9 26 5 21 5 12c10 0 15 5 15 14ZM20 20c0-10 5-15 15-15 0 10-5 15-15 15Z"/><path d="m20 20 8-8M20 26l-8-7M11 35h18"/></svg></div>
+            <div class="benefit-icon" aria-hidden="true"><svg viewBox="0 0 40 40"><path d="M20 35V18M20 26C9 26 5 21 5 12c10 0 15 5 15 14ZM20 20c0-10 5-15 15-15 0 10-5 15-15 15Z"></path><path d="m20 20 8-8M20 26l-8-7M11 35h18"></path></svg></div>
             <span class="benefit-topic">Il team</span>
             <h3>Trasforma le differenze in valore</h3>
             <p>Valorizza l'esperienza delle generazioni più mature insieme alle competenze, alle idee e ai nuovi strumenti portati dalle generazioni più giovani, costruendo un team più coeso e capace di evolvere.</p>
@@ -271,10 +272,10 @@ footer{background:var(--black);color:#aebda4;text-align:center;padding:24px;font
         <div class="eyebrow">20 ottobre 2026 · ore 14.00</div>
         <h2 id="countdown-title" class="display">All'inizio del Talk</h2>
         <div class="countdown-grid" id="countdown-grid" role="timer" aria-label="Tempo all’inizio del Talk">
-          <div class="counter-box"><strong id="days">00</strong><span>Giorni</span></div>
-          <div class="counter-box"><strong id="hours">00</strong><span>Ore</span></div>
-          <div class="counter-box"><strong id="minutes">00</strong><span>Minuti</span></div>
-          <div class="counter-box"><strong id="seconds">00</strong><span>Secondi</span></div>
+          <div class="counter-box"><strong id="days">26</strong><span>Giorni</span></div>
+          <div class="counter-box"><strong id="hours">04</strong><span>Ore</span></div>
+          <div class="counter-box"><strong id="minutes">17</strong><span>Minuti</span></div>
+          <div class="counter-box"><strong id="seconds">43</strong><span>Secondi</span></div>
         </div>
         <div id="countdown-state" class="countdown-state" aria-live="polite"></div>
         <div class="countdown-meta">Martedì 20 ottobre 2026 · Ore 14.00</div>
@@ -298,41 +299,41 @@ footer{background:var(--black);color:#aebda4;text-align:center;padding:24px;font
         <div class="eyebrow">Partecipazione gratuita</div>
         <h2 id="form-title" class="display">Iscriviti gratuitamente al Talk</h2>
 
-        <form id="signup-form" novalidate>
+        <form id="signup-form" novalidate="">
           <div class="form-grid">
             <div class="field">
               <label for="nome">Nome</label>
-              <input id="nome" name="nome" type="text" autocomplete="given-name" aria-describedby="nome-error" required>
+              <input id="nome" name="nome" type="text" autocomplete="given-name" aria-describedby="nome-error" required="">
               <div class="error" id="nome-error"></div>
             </div>
             <div class="field">
               <label for="cognome">Cognome</label>
-              <input id="cognome" name="cognome" type="text" autocomplete="family-name" aria-describedby="cognome-error" required>
+              <input id="cognome" name="cognome" type="text" autocomplete="family-name" aria-describedby="cognome-error" required="">
               <div class="error" id="cognome-error"></div>
             </div>
             <div class="field">
               <label for="ragione_sociale">Ragione Sociale</label>
-              <input id="ragione_sociale" name="ragione_sociale" type="text" autocomplete="organization" aria-describedby="ragione_sociale-error" required>
+              <input id="ragione_sociale" name="ragione_sociale" type="text" autocomplete="organization" aria-describedby="ragione_sociale-error" required="">
               <div class="error" id="ragione_sociale-error"></div>
             </div>
             <div class="field">
               <label for="citta">Città</label>
-              <input id="citta" name="citta" type="text" autocomplete="address-level2" aria-describedby="citta-error" required>
+              <input id="citta" name="citta" type="text" autocomplete="address-level2" aria-describedby="citta-error" required="">
               <div class="error" id="citta-error"></div>
             </div>
             <div class="field">
               <label for="email">Email</label>
-              <input id="email" name="email" type="email" inputmode="email" autocomplete="email" aria-describedby="email-error" required>
+              <input id="email" name="email" type="email" inputmode="email" autocomplete="email" aria-describedby="email-error" required="">
               <div class="error" id="email-error"></div>
             </div>
             <div class="field">
               <label for="cellulare">Cellulare</label>
-              <input id="cellulare" name="cellulare" type="tel" inputmode="tel" autocomplete="tel" aria-describedby="cellulare-error" required>
+              <input id="cellulare" name="cellulare" type="tel" inputmode="tel" autocomplete="tel" aria-describedby="cellulare-error" required="">
               <div class="error" id="cellulare-error"></div>
             </div>
 
             <div class="privacy-row">
-              <input id="privacy" name="privacy" type="checkbox" aria-describedby="privacy-error" required>
+              <input id="privacy" name="privacy" type="checkbox" aria-describedby="privacy-error" required="">
               <label for="privacy">Ho letto e accetto l'<a id="privacy-link" href="https://www.farmaciavincente.it/privacy" target="_blank" rel="noopener">informativa sulla privacy</a>.</label>
             </div>
             <div class="error" id="privacy-error"></div>
@@ -352,14 +353,14 @@ footer{background:var(--black);color:#aebda4;text-align:center;padding:24px;font
 
   <footer>Copyright 2026 <span>Farmacia Vincente™</span> · Tutti i diritti riservati</footer>
 
-  <div class="mobile-cta" id="mobile-cta">
+  <div class="mobile-cta is-hidden" id="mobile-cta" inert="" aria-hidden="true">
     <button class="btn js-scroll-form" type="button">Iscriviti al Talk</button>
   </div>
 
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Event","name":"Confronto Intergenerazionale – Come le diverse generazioni in farmacia condizionano il lavoro","description":"Analisi del confronto tra generazioni in farmacia e strategie per trasformare le differenze in valore, coesione e crescita del team.","startDate":"2026-10-20T14:00:00+02:00","eventAttendanceMode":"https://schema.org/OnlineEventAttendanceMode","eventStatus":"https://schema.org/EventScheduled","performer":{"@type":"Person","name":"Veronica de Angelis"},"organizer":{"@type":"Organization","name":"Farmacia Vincente"},"url":"https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/confronto-intergenerazionale-farmacia/"}</script>
   <script>
 const WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/1977593/4d7nlmj/";
-const THANK_YOU_URL = "https://damianoconsorti.github.io/farmacia-vincente-talk-intergenerazionale/grazie/";
+const THANK_YOU_URL = "./grazie/";
 const PRIVACY_URL = "https://www.farmaciavincente.it/privacy";
 const EVENT_START = "2026-10-20T14:00:00+02:00";
 const EVENT_END = "2026-10-21T00:00:00+02:00"; // Chiusura tecnica a fine giornata; sostituire con ora reale quando comunicata.
@@ -377,7 +378,7 @@ if ("IntersectionObserver" in window && !reducedMotion.matches) {
   const revealObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("is-visible");
+        entry.target.classList.add("");
         revealObserver.unobserve(entry.target);
       }
     });
@@ -521,6 +522,6 @@ form.addEventListener("submit", async event => {
   }
 });
   </script>
-</body>
-</html>
 
+
+</body><div id="codex-browser-sidebar-comments-root" style="position: fixed; inset: 0px; pointer-events: none; z-index: 2147483647;"></div></html>

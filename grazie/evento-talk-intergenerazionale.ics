@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Farmacia Vincente//Talk Intergenerazionale//IT
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:talk-confronto-intergenerazionale-20261020@farmaciavincente.it
+DTSTAMP:20260924T000000Z
+DTSTART:20261020T120000Z
+DTEND:20261020T130000Z
+SUMMARY:Talk FV – Confronto Intergenerazionale
+DESCRIPTION:Talk Farmacia Vincente con Veronica de Angelis.\nCollegamento Zoom: https://us06web.zoom.us/j/85927552067
+LOCATION:Online su Zoom – https://us06web.zoom.us/j/85927552067
+URL:https://us06web.zoom.us/j/85927552067
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
